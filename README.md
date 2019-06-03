@@ -4,6 +4,7 @@
 ## Índice
 
 - [Índice](#índice)
+- [Resumen](#resumen)
 - [Investigación UX](#investigación-UX)
   - [¿Por qué usarlo?](#por-qué-usarlo)
 - [Diagrama de flujo](#diagrama-de-flujo)
@@ -11,47 +12,40 @@
 - [Feedback](#feedback)
 - [Prototipo en Balsamic](#prototipo-en-balsamic)
 
-## Preámbulo
+## Resumen
 
-Cifrar significa codificar. El [cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar)
-es un tipo de **cifrado por sustitución**, es decir que una letra en el texto original es
-reemplazada por otra letra que se encuentra un número de posiciones más adelante en el alfabeto.
+Este proyecto trata de darle al usuario acceso(mediante un correcto inicio de sesión) a una herramienta que **cifra o descifra mensajes**.
+Sigue la lógica del [cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar).
 
-Veamos los siguientes ejemplos:
-- Si ciframos la letra A usando un desplazamiento (_offset_) de 3 posiciones, entonces la **A**
-se convierte en **D**.
-- Ahora, si ciframos la palabra **CASA** con el mismo desplazamiento de 3, ésta se convierte en
-**FDVD**.
-- Y para el alfabeto completo, con el mismo desplazamiento de 3 posiciones, sería:
-  - Sin cifrado: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-  - Ya cifrado : D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+## Investigación UX
+Éste producto tiene como usuarios a los docentes de colegios, universidades y otros.
+Tiene como objetivo el poder guardar información en modo cifrado y descifrarlo en el momento que sea necesario, de modo que si alguien accede a éste no sepa de qué trata y así mantener la información a salvo.
 
-  ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+**¿Por qué usarlo?**:
 
-> En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad
-  y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el
-  cifrado César sí puede formar parte de sistemas más complejos de codificación, como el
-  cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
+Una de las cosas a las que un docente se expone en su día a día al tener archivos de futuras prácticas, exámenes, notas y otros en memorias usb y/o la nube es que por un descuido externos puedan acceder a ésta información y se filtre. Tener la posibilidad de encriptar archivos de alta importancia y descifrarlo sólo cuando lo necesite es una de las mejores maneras de proteger la información.
 
-## Objetivos de aprendizaje
+## Diagrama de flujo
 
-El objetivo principal de aprendizaje es adquirir experiencia desarrollando aplicaciones web (_WebApp_) que
-interactúen con el usuario a través del navegador y la lógica, utilizando HTML5, CCS3 y JavaScript (ES6)
-como herramientas.
+![image](https://user-images.githubusercontent.com/51327685/58820374-13146c80-85f8-11e9-96d5-56aa4108ac2f.png)
+**Figura 1.** Trabajado por squad en el bootcamp, es la idea que acordamos en que va a funcionar nuestra web, salvo algunas modificaciones personalizadas.
+## Prototipo en papel
 
-En este proyecto tendrás que construir una aplicación web que le permita a un usuario cifrar y descifrar un
-mensaje.
+![image](https://user-images.githubusercontent.com/51327685/58822028-1c073d00-85fc-11e9-8a5a-ae460d1b4043.png)
 
-Para completar el proyecto tendrás que familiarizarte con conceptos como las necesidades del usuario y propuesta
-de una solución; etiquetas semánticas y formularios en HTML5; modelo de cajas y selectores en CSS3; métodos de
-selección y eventos del DOM; manipulación de strings, control de flujo y funciones en JS; así como pruebas
-unitarias en Mocha. Recuerda que parte fundamental es organizar tu tiempo y priorizar tus tareas.
+![image](https://user-images.githubusercontent.com/51327685/58823701-f11ee800-85ff-11e9-8124-9e2a04257b1d.png)
 
-## Consideraciones generales
+## Feedback
 
-- Este proyecto se debe resolver de manera individual.
-- Primero se deberá _forkear_ y _clonar_ este repositorio.
-- El tiempo sugerido para presentar este proyecto es de aproximadamente 2 semanas (2 sprints):
+Lo realizamos con una compañera del squad, puedo rescatar que algunos comandos(botones) no tenían asignados nombres claros, por ejemplo el botón **"Continuar”** se confundía con el botón **“Salir”**, así que cambié **“Continuar” por “Volver”**.
+
+## Prototipo en Balsamic
+
+
+
+
+
+
 
   | Tiempos           | Fechas         | Detalles                           |
   | :---------------: | :------------: | :--------------------------------- |
@@ -60,108 +54,13 @@ unitarias en Mocha. Recuerda que parte fundamental es organizar tu tiempo y prio
 
 ## Requerimientos del proyecto
 
-La temática es libre pero la interfaz debe permitir al usuario:
 
-- Mostrar una vista de ingreso que tenga como contraseña LABORATORIA. En caso de colocar una clave
-incorrecta, se mostrará un mensaje de error; sin embargo al tercer intento debería mostrar el mensaje
-_"Ya utilizaste todos tus intentos, en este momento no podrás ingresar"_.
-- Escribir un mensaje (texto) para ser cifrado.
-- Elegir un desplazamiento (_offset_) a usar en el cifrado y/o descifrado.
-- Ver el resultado del mensaje cifrado correctamente.
-- Escribir un mensaje (texto) para ser descifrado.
-- Ver el resultado del mensaje descifrado correctamente.
 
-En este proyecto, tu producto debe utilizar este alfabeto simple (solamente mayúsculas y sin ñ):
-
-A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-
-### Planificación (Agile-Scrum)
-
-Identifica y prioriza las tareas de tu proyecto; deberás escribirlas y mantenerlas
-actualizadas en un archivo de Google Docs mediante esta [plantilla](https://docs.google.com/document/d/1lgfQKRar21wmIhdNiiSDuL6odChMN16gAgeeHejLVcg).
-No dudes en solicitar ayuda a tus coaches.
-
-### UX (Diseño de experiencia de usuario)
-
-Antes de iniciar a codear, debes entender el problema que quieres solucionar y cómo tu
-aplicación lo soluciona.
-- Trabaja tu primer prototipo con papel y lápiz (blanco y negro).
-- Luego valida esta solución con una compañera (pedir feedback).
-- Toma lo aprendido al momento de validar tu primer prototipo y desarrolla un nuevo prototipo
-usando [Balsamiq](https://balsamiq.com/)). Estos puntos los presentarás en el `README.md`.
-
-**`README.md`**:
-
-Debe contener lo siguiente:
-- Un título con el nombre de tu proyecto.
-- Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
-- La imagen final de tu proyecto.
-- Investigación UX:
-  - Explicar quiénes son los usuarios y los objetivos en relación con el producto.
-  - Explicar cómo el producto soluciona los problemas/necesidades de dichos usuarios.
-  - Luego colocarás la foto de tu primer prototipo en papel.
-  - Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  - Imagen del prototipo final en Balsamiq.
-
-### Front-end
-
-#### Visualmente (HTML5 y CSS3)
-
-Deberás maquetar de forma exacta el prototipo final que hiciste en balsamiq utilizando
-HTML5 y CSS3. En este momento elegirás los colores, tipo de fuente, etc a usar.
-
-A continuación describimos los archivos que utilizarás:
-
-**`src/index.html`**:
-
-En este archivo va el contenido que se mostrará al usuario (esqueleto HTML). Encontrarás
-3 etiquetas iniciales:
-
-- `<header>`: encabezado de tu proyecto.
-- `<main>`: contenido principal de tu proyecto.
-- `<footer>`: pie de página de tu proyecto.
-
-**`src/style.css`**:
-
-Este archivo debe contener las reglas de estilo. Queremos que escribas tus propias reglas,
-por eso NO está permitido el uso de frameworks de CSS3 (Bootstrap, materialize, etc).
 
 #### Funcionalmente (JavaScript ES6 - pruebas unitarias)
 
-- La lógica del proyecto debe estar implementada completamente en JavaScript (ES6).
-- En este proyecto NO está permitido usar librerías o frameworks, sólo
-[vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e).
-- No se debe utilizar la _pseudo-variable_ `this`.
 
-Vamos a tener 2 archivos JavaScript separando responsabilidades, a continuación indicamos qué
-harás en cada archivo:
 
-**`src/cipher.js`**:
-
-Acá escribirás las 2 funciones necesarias para el usuario pueda cifrar o descifrar.
-Para esto debes implementar el **objeto `cipher`**, el cual ya se encuentra _exportado_ en el
-objeto global (`window`). Este objeto (`cipher`) contiene dos métodos:
-
-  - **`cipher.encode(offset, string)`**: `offset` es el número de posiciones que queremos
-  mover a la derecha en el alfabeto y `string` el mensaje (texto) que queremos cifrar.
-  - **`cipher.decode(offset, string)`**: `offset` es el número de posiciones que queremos
-  mover a la izquierda en el alfabeto y `string` el mensaje (texto) que queremos descifrar.
-
-**`src/index.js`**:
-
-Acá escribirás todo el código que tenga que ver con la interacción del DOM (seleccionar,
-actualizar y manipular elementos del DOM y eventos).
-Es decir, en este archivo deberás invocar a `cipher.encode(offset, string)` y
-`cipher.decode(offset, string)` según sea necesario para actualizar el resultado en la
-pantalla(UI).
-
-**`test/cipher.spec.js`**:
-
-En este archivo tendrás que completar las pruebas unitarias de las funciones
-`cipher.encode(offset, string)` y `cipher.decode(offset, string)` implementadas en `cipher.js`
-utilizando Mocha.
-Tus pruebas unitarias deben dar un 70% en _coverage_ (cobertura), _statements_ (sentencias),
-_functions_ (funciones) y _lines_ (líneas); y un mínimo del 50% de _branches_ (ramas).
 
 ## Entrega
 
@@ -191,49 +90,8 @@ para comenzar a entender cómo organizar tu trabajo.
 - [El proceso de diseño](https://lms.laboratoria.la/cohorts/lim-2019-05-bc-core-lim010/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
 - [Balsamiq](https://balsamiq.com/)
 
-### Para el Desarrollo Front-end:
 
-#### HTML5
-
-- [HTML, semántica y formularios](https://lms.laboratoria.la/cohorts/lim-2019-05-bc-core-lim010/courses/html/02-html5/00-opening)
-- [Validador de html](https://validator.w3.org/)
-
-#### CSS3
-
-- [Modelo de cajas](https://lms.laboratoria.la/cohorts/lim-2019-05-bc-core-lim010/courses/css/01-css/02-boxmodel-and-display)
-- [Selectores CSS](https://disenowebakus.net/selectores-en-css.php)
-
-#### Javascript ES6 y pruebas unitarias
-
-- Video de Michelle, acá encontrarás la fórmula matemática del Cifrado César y un par de cosas
-más que debes saber para resolver este proyecto. ¡Escúchala con detenimiento y sigue sus
-consejos! :)
-  [![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
-- [Aprende más sobre `ASCII`](https://elcodigoascii.com.ar/)
-- [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
-- [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
-- [Valores y tipos de datos](https://lms.laboratoria.la/cohorts/lim-2019-05-bc-core-lim010/courses/javascript/01-basics/01-values-variables-and-types)
-- [Variables](https://lms.laboratoria.la/cohorts/lim-2019-05-bc-core-lim010/courses/javascript/01-basics/02-variables)
-- [Control de flujo](https://lms.laboratoria.la/cohorts/lim-2019-05-bc-core-lim010/courses/javascript/02-flow-control/00-opening)
-- [Tests unitarios](https://lms.laboratoria.la/cohorts/lim-2019-05-bc-core-lim010/courses/javascript/11-testing/00-opening)
-- [GitHub y GitHub Pages](https://guides.github.com/)
-- [Documentación de NPM](https://docs.npmjs.com/)
-
-## Detalles de aprendizaje
-
-### A nivel de planificación
-
-- Aprender que antes de empezar a desarrollar un producto lo primero que se debe hacer es pensar
-en cómo solucionar un problema identificando tareas específicas (diagrama de flujo, pseudocódigo
-y tablero de planificación).
-- Planificar y realizar las tareas específicas y presentar el proyecto dentro del tiempo indicado
-(sprint).
-- Organizar el tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
-
-### A nivel de UX
-
-- Entender las **necesidades del usuario** y cómo proponer una solución para él.
-- Entender la importancia del proceso de prototipado durante la creación de un proyecto digital.
+der la importancia del proceso de prototipado durante la creación de un proyecto digital.
 - Conocer los principios básicos del diseño visual.
 
 ### A nivel del Desarrollo Front-end
