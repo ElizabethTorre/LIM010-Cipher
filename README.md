@@ -1,19 +1,15 @@
-# Cifrado César
+# Proyecto N°1: Cifrado César
+# Título: Que nadie lo sepa
 
 ## Índice
 
 - [Índice](#índice)
-- [Preámbulo](#preámbulo)
-- [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
-- [Consideraciones generales](#consideraciones-generales)
-- [Requerimientos del proyecto](#requerimientos-del-proyecto)
-  - [Planificación (Agile-Scrum)](#planificación-agile-scrum)
-  - [UX (Diseño de experiencia de usuario)](#ux-diseño-de-experiencia-de-usuario)
-  - [Front-end](#front-end)
-- [Entrega](#entrega)
-- [Parte opcional o "Hacker edition"](#parte-opcional-o-hacker-edition)
-- [Recursos y temas relacionados](#recursos-y-temas-relacionados)
-- [Detalles de aprendizaje](#detalles-de-aprendizaje)
+- [Investigación UX](#investigación-UX)
+  - [¿Por qué usarlo?](#por-qué-usarlo)
+- [Diagrama de flujo](#diagrama-de-flujo)
+- [Prototipo en papel](#prototipo-en-papel)
+- [Feedback](#feedback)
+- [Prototipo en Balsamic](#prototipo-en-balsamic)
 
 ## Preámbulo
 
