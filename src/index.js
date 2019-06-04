@@ -2,13 +2,16 @@
 const contraseña=document.getElementById('pass');
 const verificar=document.getElementById('iniciar');
 const clave='laboratoria'.toUpperCase();
+const p1=document.getElementById('p1');
+const p2=document.getElementById('p2');
+const p3=document.getElementById('p3');
 
 let cont=1;
 verificar.addEventListener('click',function() {
 const pass=contraseña.value;
     if(pass == clave){
-      alert('Bienvenido');
-      document.getElementById('rpta').innerHTML='';
+    p1.style.display='none';
+    p2.style.display='block';
     }
     else if (cont>2) {
       document.getElementById('rpta').innerHTML=' Ha intentado demasiadas veces. Refrescar!';
@@ -27,6 +30,7 @@ const pass=contraseña.value;
 
 //Para cifrar el mensaje
 function cifrarMensaje() {
+
   //Captar mensaje
 const mensaje = document.getElementById('Message').value;
   //Captar n, numero fijo para cifrar
@@ -39,6 +43,8 @@ if(offset<1){
   return document.getElementById('result').value = '';
 }
 else{
+  p2.style.display='none';
+  p3.style.display='block';
   //Variables para llevar a cabo el cifrado
 let cifrado='';
 let cifradoCesar = 0;
@@ -84,6 +90,8 @@ function descifrarMensaje() {
     return document.getElementById('result').value = '';
   }
   else{
+    p2.style.display='none';
+    p3.style.display='block';
   //Variables para llevar a cabo el cifrado
   let descifrado='';
   let cifradoCesar = 0;
@@ -112,4 +120,8 @@ function descifrarMensaje() {
     }
     return document.getElementById('result').value = descifrado;
   }
+}
+function Volver(){
+  p3.style.display='none';
+  p2.style.display='block';
 }

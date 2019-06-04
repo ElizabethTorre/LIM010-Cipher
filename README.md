@@ -28,6 +28,7 @@ Una de las cosas a las que un docente se expone en su día a día al tener archi
 ## Diagrama de flujo
 
 ![Diagrama_flujo](https://user-images.githubusercontent.com/51327685/58891471-300d7600-86b2-11e9-9a57-36c742dda3fe.jpg)
+
 **Figura 1.** Trabajado por squad en el bootcamp, es la idea que acordamos en que va a funcionar nuestra web, salvo algunas modificaciones personalizadas.
 ## Prototipo en papel
 
