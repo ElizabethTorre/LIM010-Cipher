@@ -27,13 +27,14 @@ Una de las cosas a las que un docente se expone en su día a día al tener archi
 
 ## Diagrama de flujo
 
-![image](https://user-images.githubusercontent.com/51327685/58820374-13146c80-85f8-11e9-96d5-56aa4108ac2f.png)
+![Diagrama_flujo](https://user-images.githubusercontent.com/51327685/58891471-300d7600-86b2-11e9-9a57-36c742dda3fe.jpg)
 **Figura 1.** Trabajado por squad en el bootcamp, es la idea que acordamos en que va a funcionar nuestra web, salvo algunas modificaciones personalizadas.
 ## Prototipo en papel
 
-![image](https://user-images.githubusercontent.com/51327685/58822028-1c073d00-85fc-11e9-8a5a-ae460d1b4043.png)
+![NuevoDocumento 2019-06-02_1](https://user-images.githubusercontent.com/51327685/58891555-53d0bc00-86b2-11e9-8755-4f379dda98ef.jpg)
 
-![image](https://user-images.githubusercontent.com/51327685/58823701-f11ee800-85ff-11e9-8124-9e2a04257b1d.png)
+
+![NuevoDocumento 2019-06-02_2](https://user-images.githubusercontent.com/51327685/58891587-63500500-86b2-11e9-8c56-f12ef5edd092.jpg)
 
 ## Feedback
 
