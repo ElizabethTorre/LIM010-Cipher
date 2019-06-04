@@ -1,1 +1,98 @@
 /* Acá van tus reglas de estilo */
+/* https://www.youtube.com/watch?v=xCasfsqbEaM&t=16s */
+/*
+font-family: 'Acme', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Monoton', cursive;
+font-family: 'Rancho', cursive;
+font-family: 'Righteous', cursive;
+*/
+body{
+  text-align: center;
+  background-image: url('img2.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header h1{
+  position: fixed;
+  font-family: 'Rancho', cursive;
+  background-color: #ff5733;
+  width: 100%;
+  left: 0;
+  top: 0;
+  /*background-color: #C1E166;*/
+  margin:0 auto;
+  padding: 20px;
+  font-size: 80px;
+  color: white;
+  text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
+}
+.inicioSesion{
+  background-color: #7E7979;
+  box-sizing: border-box;
+  opacity: 0.8; /*Opaca el color dado al elemento, mientras más bajo el número, baja más el tono*/
+  width: 250px; /*es el ancho de la caja*/
+  padding-top: 35px;
+  padding-bottom: 35px;
+  height: 300px;
+}
+.p1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 160px;
+  bottom: 100px;
+}
+h2{
+  margin:10px;
+  font-family: 'Righteous', cursive;
+  color: #4EADE3;
+  text-shadow: -3px -3px 3px white, 3px -3px 3px white, -3px 3px 3px white, 3px 3px 3px white;
+}
+#user{
+  font-size: 80px;
+}
+#rpta{
+  font-size: 14px;
+  color: #DD1302;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+#pass, #iniciar{
+  margin: 5px;
+}
+#iniciar:hover{
+    background-color: #fff;
+    color:blue;
+    border-color: #F46821;
+}
+#Message, #result{
+  height: 200px;
+  width: 500px;
+}
+#user, .Contraseña, #pass, #iniciar{
+  /*float:left;*/
+  position: relative;
+  text-align: center;
+
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Righteous', cursive;
+  background-color: #ff5733; /*#F58629;*/
+  color: white;
+  font-size: 14px;
+
+}

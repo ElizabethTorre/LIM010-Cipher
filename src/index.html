@@ -2,13 +2,64 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifrado César</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <span class="icon-user"></span>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Monoton|Rancho|Righteous&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <h1>Que nadie lo sepa</h1>
+    </header>
+    <main>
+      <div class="p1">
+        <h2>Cifra o descifra ahora!</h2>
+          <div class="inicioSesion">
+
+            <i id="user" class="em em-bust_in_silhouette"></i>
+            <form class="Contraseña" action="index.html" method="post">
+              <input type="password" id="pass" placeholder="Ingresa contraseña aqui"/><br><strong><span id="rpta"></span></strong>
+              <br><br>
+              <input type="button" id="iniciar" value="Iniciar Sesión"/>
+            </form>
+          </div>
+      </div>
+
+<div class="p2" style="display:none">
+    <h1>Cifra tu mensaje</h1>
+
+    <!--Solicitamos el mensaje al usuario-->
+    <form id=mensaje>
+      <label for="m1">Mensaje</label>
+          <textarea name="Mensaje" id="Message" type="text" required="required"></textarea>
+      <!--    <input name="enviar" type="button" placeholder="Tu mensaje" value="Cifrar" onclick="cifrarMensaje()" required>-->
+      <!--<input type="submit"  name="Mensaje" onclick="mensaje()" required>-->
+    </form>
+    <br>
+    <!--Solicitamos el offset (desplazamientos) al usuario-->
+    <form>
+      <label for="os">Desplazamientos</label>
+          <input id="offSet" type="number" min ="1" max="10000" required="required"/><span id="negativo"></span>
+        <!--  <input name="enviar" type="submit" id="offset" value="Enviar" required> -->
+    </form>
+    <br>
+    <input name="enviar" type="button" placeholder="Tu mensaje" value="Cifrar" onclick="cifrarMensaje()" />
+    <input name="enviar" type="button" placeholder="Mensaje cifrado" value="Descifrar" onclick="descifrarMensaje()" />
+    <br>
+</div>
+
+<div class="p3" style="display:none">
+    <!--Entregar el mensaje cifrado-->
+    <form id=resultado>
+      <label for="m1">Mensaje Cifrado/Descifrado</label>
+          <textarea name="Mensaje" id="result" type="text"></textarea>
+      <!--  <input name="enviar" type="button" placeholder="Mensaje cifrado" value="Descifrar" onclick="descifrarMensaje()" required>-->
+      <!--<input type="submit"  name="Mensaje" onclick="mensaje()" required>-->
+    </form>
+</div>
+    </main>
+    <footer>Si quieres que tu secreto sea guardado, guárdalo tu mismo.</footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

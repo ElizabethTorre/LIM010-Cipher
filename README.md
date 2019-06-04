@@ -41,91 +41,39 @@ Lo realizamos con una compañera del squad, puedo rescatar que algunos comandos(
 
 ## Prototipo en Balsamic
 
+### Primera vista: Inicio de Sesión
+En ésta primera pantalla se le pide ingresar una contraseña al usuario para iniciar sesión, la contraseña está predeterminada como **"LABORATORIA"**.
 
+![New Mockup 1](https://user-images.githubusercontent.com/51327685/58885897-9db4a480-86a8-11e9-9bf3-88a336be6cd7.png)
 
+### Vista: Error!
+Se mostrará un mensaje de **"Introduzca una clave valida."** debajo del espacio para la contraseña los 2 primeros intentos.Se (_limpiará y enfocará la caja_) para la contraseña.
 
+NOTA: También se considera contraseña inválida si el espacio está **"vacío"**.
 
+![New Mockup 1 copy](https://user-images.githubusercontent.com/51327685/58886040-dc4a5f00-86a8-11e9-94a6-537384b6184e.png)
 
+![New Mockup 1 copy 3](https://user-images.githubusercontent.com/51327685/58886134-026fff00-86a9-11e9-885b-3ee0e02e2702.png)
 
-  | Tiempos           | Fechas         | Detalles                           |
-  | :---------------: | :------------: | :--------------------------------- |
-  | **1er Sprint**    | 30/05 al 07/06 |Planificación del sprint 1, prototipado de baja fidelidad (papel y lapiz) + iteración (herramienta [balsamiq](https://balsamiq.com/)), _code review_ (revisión de código), _peer feedback_ (retroalimentación por parejas)  _retrospectiva_ (identificar, documentar e internalizar las lecciones aprendidas en la 1ra semana), planificación del sprint 2  |
-  | **2do Sprint**    | 07/06 al 14/06 | _Code review_ (revisión de código), _peer feedback_ (retroalimentación por parejas),  _retrospectiva_ (identificar, documentar e internalizar las lecciones aprendidas en la 2da semana), _demo_ (presentación) y _feedback_ final del proyecto |
+En el tercer intento, el mensaje será **"Ha intentado demasiadas veces. Refrescar!"**, de modo que se deshabilitan la caja para ingresar la contraseña y el botón de (_'Iniciar Sesión'_).
 
-## Requerimientos del proyecto
+![New Mockup 1 copy 2](https://user-images.githubusercontent.com/51327685/58885974-c046bd80-86a8-11e9-9028-fcf2afa8cf36.png)
 
+###Ingresar mensaje:
+Si se inicia sesión exitosamente, se mostrará un espacio para ingresar el mensaje, el **desplazamiento** que desea y la opción de **Cifrar** o **Descifrar**.
 
+NOTA: el desplazamiento sólo puede ser mayor a cero.
 
+![New Mockup 2](https://user-images.githubusercontent.com/51327685/58886200-1ca9dd00-86a9-11e9-8949-d13a2daed2c0.png)
 
-#### Funcionalmente (JavaScript ES6 - pruebas unitarias)
+En caso de que el número ingresado en el desplazamiento sea menor o igual a cero, se mostrará un mensaje debajo de la casilla indicando que debe ingresar un número mayor a cero, se limpia y enfoca el casillero.
 
+![New Mockup 2 copy](https://user-images.githubusercontent.com/51327685/58886241-2df2e980-86a9-11e9-832d-210fb71cce27.png)
 
+Una vez ingresado correctamente los datos, se mostrará la pantalla de resultado, con la opción de **Volver** o **Salir**.
 
+![New Mockup 3](https://user-images.githubusercontent.com/51327685/58886358-5ed31e80-86a9-11e9-8b6a-86578a417b70.png)
 
-## Entrega
+Si se elige **Salir**, se mostrará una pantalla de despedida.
 
-El proyecto será entregado subiendo tu código a GitHub (_commit/push_) y la interfaz será
-desplegada usando GitHub pages. Recuerda también completar el archivo `README.md` con la
-información solicitada.
-
-## Parte opcional o “Hacker edition”
-
-Esta sección es **opcional** y solo debería realizarse una vez **terminado todo lo anterior**.
-Acá podrás profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
-Si te queda tiempo, puedes explorar algunos de estos ejemplos:
-
-- Cifra/descifra minúsculas.
-- Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...).
-- Permite usar un `offset` negativo.
-
-## Recursos y temas relacionados
-
-### Para la planificación:
-
-- [Guía de Scrum](https://www.scrumguides.org/docs/scrumguide/v1/scrum-guide-es.pdf): solamente
-para comenzar a entender cómo organizar tu trabajo.
-
-### Para UX:
-
-- [El proceso de diseño](https://lms.laboratoria.la/cohorts/lim-2019-05-bc-core-lim010/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
-- [Balsamiq](https://balsamiq.com/)
-
-
-der la importancia del proceso de prototipado durante la creación de un proyecto digital.
-- Conocer los principios básicos del diseño visual.
-
-### A nivel del Desarrollo Front-end
-
-#### HTML5
-
-- Utilizar etiquetas semánticas  de HTML5 y elementos de formulario.
-- Validar que tu marcado HTML5 esté correctamente implementado a través del
-[validador de html](https://validator.w3.org/).
-
-#### CSS3
-
-- Utilizar diversos tipos de selectores en CSS: de elemento, de clase, de id, etc.
-- Comprender el modelo de cajas (border, margin, padding)
-- Definir reglas de estilos
-
-#### DOM (Document Object Model)
-
-- Utilizar eventos del DOM que le permitan al usuario interactuar con la aplicación.
-- Utilizar los métodos de selección del DOM.
-- Actualizar de manera dinámica el contenido de la aplicación a través de innerHTML o
-textContent
-
-#### JavaScript (ES6)
-
-- Manipular _**strings**_ (cadenas de texto).
-- Usar **control de flujo if-else, do-while** (bucles y condicionales).
-- _Implementar funciones_ dada una descripción de su comportamiento.
-- Verifica que tus funciones hagan las cosas para las que fueron creadas
-(**pruebas unitarias (_test_) con Mocha**)
-
-#### Git-Github
-
-- Configurar tu cuenta de git
-- _Forkear_ y _clonar_ el repositorio del proyecto.
-- Mantener actualizado los cambios  (commit, pull, push)
-- Desplegar tu proyecto en gh-pages
+![New Mockup 5](https://user-images.githubusercontent.com/51327685/58886390-6bf00d80-86a9-11e9-8522-c5fd01d754e7.png)
