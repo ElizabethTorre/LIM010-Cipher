@@ -45,6 +45,7 @@ if(offset<1){
 else{
   p2.style.display='none';
   p3.style.display='block';
+  document.getElementById('accion').innerHTML=' Cifrado';
   //Variables para llevar a cabo el cifrado
 let cifrado='';
 let cifradoCesar = 0;
@@ -92,6 +93,7 @@ function descifrarMensaje() {
   else{
     p2.style.display='none';
     p3.style.display='block';
+    document.getElementById('accion').innerHTML=' Descifrado';
   //Variables para llevar a cabo el cifrado
   let descifrado='';
   let cifradoCesar = 0;
@@ -125,3 +127,9 @@ function Volver(){
   p3.style.display='none';
   p2.style.display='block';
 }
+/*function limpiar(){
+  const mje=document.getElementById('Message');
+  if (mje) {
+    mje.value= '';
+  }
+}*/

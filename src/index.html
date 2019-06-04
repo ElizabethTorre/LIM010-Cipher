@@ -33,6 +33,7 @@
     <form id=mensaje>
       <!--<label for="m1">Mensaje</label>-->
           <textarea name="Mensaje" id="Message" type="text" placeholder="Escribe tu mensaje aquí" required="required"></textarea>
+          <input id="limpiar" type="reset" value="Limpiar"/>
       <!--    <input name="enviar" type="button" placeholder="Tu mensaje" value="Cifrar" onclick="cifrarMensaje()" required>-->
       <!--<input type="submit"  name="Mensaje" onclick="mensaje()" required>-->
     </form>
@@ -53,7 +54,7 @@
 <div id="p3" style="display:none">
     <!--Entregar el mensaje cifrado-->
     <form id=resultado>
-      <h1>Mensaje Cifrado/Descifrado</h1>
+      <h1>Mensaje<span id="accion"></span></h1>
           <textarea name="Mensaje" id="result" type="text"></textarea><br>
       <!--  <input name="enviar" type="button" placeholder="Mensaje cifrado" value="Descifrar" onclick="descifrarMensaje()" required>-->
       <!--<input type="submit"  name="Mensaje" onclick="mensaje()" required>-->

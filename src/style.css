@@ -77,9 +77,20 @@ h2{
     color:blue;
     border-color: #F46821;
 }
-#Message, #result{
+#result{
   height: 200px;
   width: 500px;
+  box-sizing: border-box;
+}
+#Message{
+  height: 200px;
+  width: 400px;
+  box-sizing: border-box;
+}
+#limpiar{
+  height: 200px;
+  width: 100px;
+  vertical-align: top;
 }
 #user, .Contraseña, #pass, #iniciar{
   /*float:left;*/
