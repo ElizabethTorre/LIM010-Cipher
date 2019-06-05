@@ -20,7 +20,7 @@ const pass=contraseña.value;
     }
     else{
       //alert('Introduzca una clave valida.');
-      document.getElementById('rpta').innerHTML=' Introduzca una clave valida.';
+      document.getElementById('rpta').innerHTML=' ERROR!Introduzca una clave válida.';
       contraseña.value='';
       contraseña.focus();
       cont++;
@@ -127,9 +127,8 @@ function Volver(){
   p3.style.display='none';
   p2.style.display='block';
 }
-/*function limpiar(){
-  const mje=document.getElementById('Message');
-  if (mje) {
-    mje.value= '';
-  }
-}*/
+
+function Salir(){
+  document.getElementById('cuerpo').innerHTML='<h6>Hasta Pronto!</h6>'+'<img src=\'https://media1.tenor.com/images/59591918d9869154c63bd3c638de5af9/tenor.gif?itemid=4652761\'/>';
+  document.getElementById('cuerpo').style.background='#ff5733';
+}

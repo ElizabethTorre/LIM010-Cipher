@@ -8,8 +8,8 @@
     <span class="icon-user"></span>
     <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Monoton|Rancho|Righteous&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <header>
+  <body id="cuerpo">
+    <header id="Título">
       <h1>Que nadie lo sepa</h1>
     </header>
     <main>
@@ -21,13 +21,13 @@
             <form class="Contraseña" action="index.html" method="post">
               <input type="password" id="pass" placeholder="Ingresa contraseña aqui"/>
               <strong><p id="rpta"></p></strong>
-              <input type="button" id="iniciar" value="Iniciar Sesión"/>
+              <input type="button" id="iniciar" value="Iniciar Sesión" required/>
             </form>
           </div>
       </div>
 
 <div id="p2" style="display:none">
-    <h1>Cifra o descifra tu mensaje</h1>
+    <h2>Cifra o descifra tu mensaje</h2>
 
     <!--Solicitamos el mensaje al usuario-->
     <form id=mensaje>
@@ -40,7 +40,7 @@
     <br>
     <!--Solicitamos el offset (desplazamientos) al usuario-->
     <form>
-      <label for="os">Desplazamientos</label>
+      <label for="os"><strong>Desplazamientos</strong></label>
           <input id="offSet" type="number" min ="1" max="10000" required="required"/>
           <strong><p id="negativo"></p></strong>
         <!--  <input name="enviar" type="submit" id="offset" value="Enviar" required> -->
@@ -54,7 +54,7 @@
 <div id="p3" style="display:none">
     <!--Entregar el mensaje cifrado-->
     <form id=resultado>
-      <h1>Mensaje<span id="accion"></span></h1>
+      <h2>Mensaje<span id="accion"></span></h2>
           <textarea name="Mensaje" id="result" type="text"></textarea><br>
       <!--  <input name="enviar" type="button" placeholder="Mensaje cifrado" value="Descifrar" onclick="descifrarMensaje()" required>-->
       <!--<input type="submit"  name="Mensaje" onclick="mensaje()" required>-->

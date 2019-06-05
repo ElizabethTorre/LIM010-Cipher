@@ -70,7 +70,7 @@ NOTA: el desplazamiento sólo puede ser mayor a cero.
 
 En caso de que el número ingresado en el desplazamiento sea menor o igual a cero, se mostrará un mensaje debajo de la casilla indicando que debe ingresar un número mayor a cero, se limpia y enfoca el casillero.
 
- ![New Mockup 2 copy](https://user-images.githubusercontent.com/51327685/58961682-462d3c00-876f-11e9-944b-d39c42badf4c.png)
+ ![New Mockup 2 copy](https://user-images.githubusercontent.com/51327685/58962378-a7094400-8770-11e9-9660-e5a8c539d10d.png)
 
 Una vez ingresado correctamente los datos, se mostrará la pantalla de resultado, con la opción de **Volver** o **Salir**.
 

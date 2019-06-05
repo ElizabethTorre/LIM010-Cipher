@@ -53,7 +53,7 @@ header h1{
 h2{
   margin:10px;
   font-family: 'Righteous', cursive;
-  color: #4EADE3;
+  color: #2C83C1;
   text-shadow: -3px -3px 3px white, 3px -3px 3px white, -3px 3px 3px white, 3px 3px 3px white;
 }
 #user{
@@ -72,11 +72,16 @@ h2{
   margin-top: 30px;
 }
 
-#iniciar:hover, #cifrar:hover, #descifrar:hover{
-    background-color: #fff;
-    color:blue;
-    border-color: #F46821;
+#iniciar:hover{
+  background-color: #fff;
+  color:blue;
+  border-color: #F46821;
 }
+ #cifrar:hover, #descifrar:hover, #volver:hover, #salir:hover, #limpiar:hover{
+   background-color: #515B63;
+   color:white;
+
+ }
 #result{
   height: 200px;
   width: 500px;
@@ -110,4 +115,19 @@ footer {
   color: white;
   font-size: 14px;
 
+}
+#cifrar, #descifrar,
+#volver, #salir{
+  margin: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #72DAB5;
+}
+h6{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Rancho', cursive;
+  font-size: 80px;
+  color: white;
+  text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
 }
