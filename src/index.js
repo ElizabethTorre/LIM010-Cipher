@@ -80,8 +80,9 @@ else{
 }
 })
 
+
 //Para descifrar el mensaje
-document.getElementById('descifrar').addEventListener('click',() =>
+document.getElementById('descifrar').addEventListener('click',() =>{
 //Captar mensaje
 const mensaje = document.getElementById('mensaje').value;
 //Captar n, numero fijo para cifrar
@@ -126,11 +127,11 @@ else{
 }
 })
 
-document.getElementById('volver').addEventListener('click',() =>
+document.getElementById('volver').addEventListener('click',() =>{
   p3.classList.add('oculto');
   p2.classList.remove('oculto');
 })
-document.getElementById('salir').addEventListener('click',() =>
+document.getElementById('salir').addEventListener('click',() =>{
   header.classList.add('oculto');
   p3.classList.add('oculto');
   p4.classList.remove('oculto');
