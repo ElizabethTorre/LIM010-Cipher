@@ -52,11 +52,11 @@ else{
   p3.classList.remove('oculto');
   document.getElementById('accion').innerHTML=' Cifrado';
   //Variables para llevar a cabo el cifrado
-  let cifrado='';
-  let cifradoCesar = 0;
+
   document.getElementById('negativo').innerHTML='';
+  cipher.encode(offset, mensaje);
   //For para recorrer el mensaje captado
-    for(let i=0; i<mensaje.length; i++){
+    /*for(let i=0; i<mensaje.length; i++){
       //Obtener el número del codigo ASCII de cada letra cifrada
       // Para mayusculas
       if(mensaje.charCodeAt(i) >= 65 && mensaje.charCodeAt(i) <= 90 ) {
@@ -76,7 +76,7 @@ else{
       cifrado+=mensajeCifrado;
     }
   //Mostrar el mensaje cifrado en el output
-  return document.getElementById('result').value = cifrado;
+return document.getElementById('result').value = cifrado;*/
 }
 })
 
@@ -101,11 +101,11 @@ else{
   p3.classList.remove('oculto');
   document.getElementById('accion').innerHTML=' Descifrado';
   //Variables para llevar a cabo el cifrado
-  let descifrado='';
-  let cifradoCesar = 0;
-  document.getElementById('negativo').innerHTML='';
 
-    for(let i=0; i<mensaje.length; i++){
+  document.getElementById('negativo').innerHTML='';
+  cipher.decode(offset,mensaje);
+
+    /*for(let i=0; i<mensaje.length; i++){
       //Obtener el número del codigo ASCII de cada letra descifrada
       // Para mayusculas
       if(mensaje.charCodeAt(i) >= 65 && mensaje.charCodeAt(i) <= 90){
@@ -123,7 +123,7 @@ else{
       //Acumular las letras descifradas
       descifrado+=mensajeDescifrado;
     }
-    return document.getElementById('result').value = descifrado;
+return document.getElementById('result').value = descifrado;*/
 }
 })
 
