@@ -78,7 +78,7 @@ else{
   //Mostrar el mensaje cifrado en el output
   return document.getElementById('result').value = cifrado;
 }
-}
+})
 
 //Para descifrar el mensaje
 document.getElementById('descifrar').addEventListener('click',() =>
@@ -124,15 +124,15 @@ else{
     }
     return document.getElementById('result').value = descifrado;
 }
-}
+})
 
 document.getElementById('volver').addEventListener('click',() =>
   p3.classList.add('oculto');
   p2.classList.remove('oculto');
-}
+})
 document.getElementById('salir').addEventListener('click',() =>
   header.classList.add('oculto');
   p3.classList.add('oculto');
   p4.classList.remove('oculto');
   document.getElementById('body').style.background='#ff5733';
-}
+})
