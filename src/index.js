@@ -28,8 +28,9 @@ const pass=contraseña.value; //Captura el valor de la contraseña ingresada
     }
 })
 
+
 //Para cifrar el mensaje
-function cifrarMensaje() {
+document.getElementById('cifrar').addEventListener('click',() => {
 
 //Captar mensaje
 const mensaje = document.getElementById('mensaje').value;
@@ -80,7 +81,7 @@ else{
 }
 
 //Para descifrar el mensaje
-function descifrarMensaje() {
+document.getElementById('descifrar').addEventListener('click',() =>
 //Captar mensaje
 const mensaje = document.getElementById('mensaje').value;
 //Captar n, numero fijo para cifrar
@@ -125,11 +126,11 @@ else{
 }
 }
 
-function Volver(){
+document.getElementById('volver').addEventListener('click',() =>
   p3.classList.add('oculto');
   p2.classList.remove('oculto');
 }
-function Salir(){
+document.getElementById('salir').addEventListener('click',() =>
   header.classList.add('oculto');
   p3.classList.add('oculto');
   p4.classList.remove('oculto');
