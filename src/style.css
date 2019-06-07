@@ -1,3 +1,4 @@
+/* Acá va tu código */
 /* Acá van tus reglas de estilo */
 /* https://www.youtube.com/watch?v=xCasfsqbEaM&t=16s */
 /*
@@ -7,6 +8,7 @@ font-family: 'Monoton', cursive;
 font-family: 'Rancho', cursive;
 font-family: 'Righteous', cursive;
 */
+
 body{
   text-align: center;
   background-image: url('img2.jpeg');
@@ -14,17 +16,28 @@ body{
   background-attachment: fixed;
   background-size: cover;
 }
+/*@media screen and (min-width: 60px)*/
+h4{
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+}
 
 header h1{
   position: fixed;
-  font-family: 'Rancho', cursive;
   background-color: #ff5733;
+  text-align: center;
   width: 100%;
   left: 0;
   top: 0;
-  /*background-color: #C1E166;*/
   margin:0 auto;
   padding: 20px;
+}
+h6{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.textShadow{
+  font-family: 'Rancho', cursive;
   font-size: 80px;
   color: white;
   text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
@@ -33,17 +46,22 @@ header h1{
   background-color: #7E7979;
   box-sizing: border-box;
   opacity: 0.8; /*Opaca el color dado al elemento, mientras más bajo el número, baja más el tono*/
-  width: 250px; /*es el ancho de la caja*/
+  width: 270px; /*es el ancho de la caja*/
+  height: 300px;
   padding-top: 35px;
   padding-bottom: 35px;
-  height: 300px;
+  top: 100px;
+  position: absolute;
+  z-index: 0;
+
 }
-#p1, #p2, #p3{
+
+.positionPantalla{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  position:absolute;
+  align-content: center;
+  position:relative;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -57,37 +75,42 @@ h2{
   text-shadow: -3px -3px 3px white, 3px -3px 3px white, -3px 3px 3px white, 3px 3px 3px white;
 }
 #user{
-  font-size: 80px;
+  z-index: 1;
+  width:140px;
+  height: 140px;
 }
-#rpta, #negativo{
-  font-size: 14px;
+.textShadow1{
   color: #DD1302;
   font-family: 'Josefin Sans', sans-serif;
   margin: 0 auto;
+  font-size: 15px;
 }
-#pass, #iniciar{
-  margin: 5px;
+.btn_1{
+  margin:5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-#iniciar{
-  margin-top: 30px;
+.btn{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #F0C504; /*#72DAB5; #D9C610*/
+  font-weight: bold;
+  font-size: 15px;
 }
 
-#iniciar:hover{
-  background-color: #fff;
-  color:blue;
-  border-color: #F46821;
-}
- #cifrar:hover, #descifrar:hover, #volver:hover, #salir:hover, #limpiar:hover{
-   background-color: #515B63;
+.btn:hover{
+   background-color: #0472F0; /*#515B63;*/
    color:white;
-
+ }
+ .btn_2{
+   margin-top: 15PX;
  }
 #result{
   height: 200px;
   width: 500px;
   box-sizing: border-box;
 }
-#Message{
+#mensaje{
   height: 200px;
   width: 400px;
   box-sizing: border-box;
@@ -97,12 +120,12 @@ h2{
   width: 100px;
   vertical-align: top;
 }
-#user, .Contraseña, #pass, #iniciar{
-  /*float:left;*/
-  position: relative;
+.position{
+  margin-top: 60px;
   text-align: center;
 
 }
+
 footer {
   position: fixed;
   bottom: 0;
@@ -114,20 +137,8 @@ footer {
   background-color: #ff5733; /*#F58629;*/
   color: white;
   font-size: 14px;
+}
 
-}
-#cifrar, #descifrar,
-#volver, #salir{
-  margin: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #72DAB5;
-}
-h6{
-  margin-top: 30px;
-  margin-bottom: 30px;
-  font-family: 'Rancho', cursive;
-  font-size: 80px;
-  color: white;
-  text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
+.oculto{
+  display: none;
 }

@@ -46,36 +46,36 @@ Lo realizamos con una compañera del squad, puedo rescatar que algunos comandos(
 ### Primera vista: Inicio de Sesión
 En ésta primera pantalla se le pide ingresar una contraseña al usuario para iniciar sesión, la contraseña está predeterminada como **"LABORATORIA"**.
 
- ![New Mockup 1](https://user-images.githubusercontent.com/51327685/58885897-9db4a480-86a8-11e9-9bf3-88a336be6cd7.png)
+ ![New Mockup 1](https://user-images.githubusercontent.com/51327685/59106610-6f2f0780-88fc-11e9-9b65-09d81fef03cf.png)
 
 ### Vista: Error!
 Se mostrará un mensaje de **"Introduzca una clave valida."** debajo del espacio para la contraseña los 2 primeros intentos.Se (_limpiará y enfocará la caja_) para la contraseña.
 
 NOTA: También se considera contraseña inválida si el espacio está **"vacío"**.
 
- ![New Mockup 1 copy](https://user-images.githubusercontent.com/51327685/58886040-dc4a5f00-86a8-11e9-94a6-537384b6184e.png)
+  ![New Mockup 1 copy](https://user-images.githubusercontent.com/51327685/59106679-9be31f00-88fc-11e9-90c6-c3e8ec1a9137.png)
 
- ![New Mockup 1 copy 3](https://user-images.githubusercontent.com/51327685/58886134-026fff00-86a9-11e9-885b-3ee0e02e2702.png)
+  ![New Mockup 1 copy 3](https://user-images.githubusercontent.com/51327685/59106707-b0271c00-88fc-11e9-81a2-3d89e56e156c.png)
 
 En el tercer intento, el mensaje será **"Ha intentado demasiadas veces. Refrescar!"**, de modo que se deshabilitan la caja para ingresar la contraseña y el botón de (_'Iniciar Sesión'_).
 
- ![New Mockup 1 copy 2](https://user-images.githubusercontent.com/51327685/58885974-c046bd80-86a8-11e9-9028-fcf2afa8cf36.png)
+  ![New Mockup 1 copy 2](https://user-images.githubusercontent.com/51327685/59106745-c7660980-88fc-11e9-8d4d-a9fa6126be03.png)
 
 ###Ingresar mensaje:
 Si se inicia sesión exitosamente, se mostrará un espacio para ingresar el mensaje, el **desplazamiento** que desea y la opción de **Cifrar** o **Descifrar**.
 
 NOTA: el desplazamiento sólo puede ser mayor a cero.
 
- ![New Mockup 2](https://user-images.githubusercontent.com/51327685/58961706-55ac8500-876f-11e9-835c-8d0ced6e64e6.png)
+  ![New Mockup 2](https://user-images.githubusercontent.com/51327685/59106778-d8af1600-88fc-11e9-8cea-6f706a8cb483.png)
 
 En caso de que el número ingresado en el desplazamiento sea menor o igual a cero, se mostrará un mensaje debajo de la casilla indicando que debe ingresar un número mayor a cero, se limpia y enfoca el casillero.
 
- ![New Mockup 2 copy](https://user-images.githubusercontent.com/51327685/58962378-a7094400-8770-11e9-9660-e5a8c539d10d.png)
+  ![New Mockup 2 copy](https://user-images.githubusercontent.com/51327685/59106817-ea90b900-88fc-11e9-8f3c-7b442e9c6d05.png)
 
 Una vez ingresado correctamente los datos, se mostrará la pantalla de resultado, con la opción de **Volver** o **Salir**.
 
- ![New Mockup 3](https://user-images.githubusercontent.com/51327685/58961815-87255080-876f-11e9-8bea-eed05723514b.png)
+  ![New Mockup 3](https://user-images.githubusercontent.com/51327685/59106852-fbd9c580-88fc-11e9-8301-c9ce830709ca.png)
 
 Si se elige **Salir**, se mostrará una pantalla de despedida.
 
-![New Mockup 5](https://user-images.githubusercontent.com/51327685/58886390-6bf00d80-86a9-11e9-8522-c5fd01d754e7.png)
+  ![New Mockup 5](https://user-images.githubusercontent.com/51327685/59106890-12801c80-88fd-11e9-8140-8b4db8b5319c.png)
