@@ -14,6 +14,7 @@ const pass=contraseña.value; //Captura el valor de la contraseña ingresada
     if(pass == clave){
     p1.classList.add('oculto');
     p2.classList.remove('oculto');
+    document.getElementById('body').style.backgroundImage='url(\'../img/img1.jpeg\')';
     }
     else if (cont>2) {
       document.getElementById('rpta').innerHTML=' Ha intentado demasiadas veces. REFRESCAR!';
@@ -43,14 +44,16 @@ if(offset<1 || offset==''){
   document.getElementById('offset').focus();
   return document.getElementById('result').value = '';
 }
-//Condición de no avanzar si el textareaestá vacío
+//Condición de no avanzar si el textarea está vacío
 else if(mensaje==''){
   document.getElementById('mensaje').focus();
+  document.getElementById('negativo').innerHTML='';
 }
 else{
   p2.classList.add('oculto');
   p3.classList.remove('oculto');
   document.getElementById('accion').innerHTML=' Cifrado';
+  
   //Variables para llevar a cabo el cifrado
 
   document.getElementById('negativo').innerHTML='';
@@ -95,6 +98,7 @@ if(offset<1 || offset==''){
 }
 else if(mensaje==''){
   document.getElementById('mensaje').focus();
+  document.getElementById('negativo').innerHTML='';
 }
 else{
   p2.classList.add('oculto');

@@ -5,11 +5,12 @@
     <title>Cifrado César</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link rel="icon" type="image/jpg" href="https://img2.freepng.es/20180402/jtq/kisspng-computer-icons-pen-writing-hand-with-pen-5ac2301edfe929.3336323715226757429172.jpg"/>
+    <link rel="icon" type="image/jpg" href="../img/logo.png"/>
     <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Monoton|Rancho|Righteous&display=swap" rel="stylesheet">
   </head>
   <body id="body">
     <header id="Título">
+      <img id="logo" src="../img/logo.png" />
       <h1 class="textShadow">Que nadie lo sepa</h1>
     </header>
     <main>
@@ -19,8 +20,9 @@
           <section class="inicioSesion">
             <form class="position" action="index.html" method="post">
               <h4>Inicio de Sesión</h4>
-              <input type="password" id="pass" class="btn_1" placeholder="Ingresa contraseña aqui"/>
-              <input type="button" id="iniciar" class="btn" value="Iniciar Sesión" required/>
+              <!--<i class="fa fa-lock" aria-hidden="true"></i> candado--> 
+              <input type="password" id="pass" class="btn_1" placeholder="&#128272;Ingresa contraseña aqui"/>
+              <input type="button" id="iniciar" class="btn" value="INICIAR SESIÓN" required/><br><br>
               <strong><p id="rpta" class="textShadow1"></p></strong>
             </form>
           </section>
@@ -47,7 +49,7 @@
 
       <section id="p3" class="oculto positionPantalla">
         <!--Entregar el mensaje cifrado-->
-        <form id=resultado>
+        <form id="resultado">
         <h2>Mensaje<span id="accion"></span></h2>
           <textarea id="result" type="text"></textarea><br>
         </form>
@@ -62,7 +64,7 @@
       </section>
 
     </main>
-    <footer>Si quieres que tu secreto sea guardado, guárdalo tu mismo.</footer>
+    <footer>Si quieres que tu secreto sea guardado, guárdalo tu mismo.<br><span style="text-decoration:underline">Copyright &#169;2019 por Elizabeth Torre Ruiz</span></footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
