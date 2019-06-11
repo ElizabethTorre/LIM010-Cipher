@@ -57,7 +57,7 @@ else{
   //Variables para llevar a cabo el cifrado
 
   document.getElementById('negativo').innerHTML='';
-  cipher.encode(offset, mensaje);
+  document.getElementById('result').value = cipher.encode(offset, mensaje);
   //For para recorrer el mensaje captado
     /*for(let i=0; i<mensaje.length; i++){
       //Obtener el número del codigo ASCII de cada letra cifrada
@@ -107,7 +107,7 @@ else{
   //Variables para llevar a cabo el cifrado
 
   document.getElementById('negativo').innerHTML='';
-  cipher.decode(offset,mensaje);
+  document.getElementById('result').value =cipher.decode(offset,mensaje);
 
     /*for(let i=0; i<mensaje.length; i++){
       //Obtener el número del codigo ASCII de cada letra descifrada

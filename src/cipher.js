@@ -22,7 +22,7 @@ window.cipher = { //cipher es un objeto con 2 métodos:encode y  decode . WINDOW
       //Acumular las letras cifradas, para formar la palabra cifrada
       cifrado+=mensajeCifrado;
     }
-    return document.getElementById('result').value = cifrado;
+    return cifrado;
   },
   decode: (offset, mensaje) => { // DECODE es una propiedad conocida como MÉTODO(propiedad que tiene una función) del objeto CIPHER
     /* Acá va tu código que descifra*/
@@ -46,6 +46,6 @@ window.cipher = { //cipher es un objeto con 2 métodos:encode y  decode . WINDOW
       //Acumular las letras descifradas
       descifrado+=mensajeDescifrado;
     }
-    return document.getElementById('result').value = descifrado;
+    return descifrado;
   }
 };
