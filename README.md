@@ -14,12 +14,12 @@
 
 ## Resumen
 
-Este proyecto trata de darle al usuario acceso(mediante un correcto inicio de sesión) a una herramienta que **cifra o descifra mensajes**.
+Este proyecto trata de darle al usuario acceso(mediante un correcto inicio de sesión) a una herramienta que **cifra o descifra mensajes** de contenido privado.
 Sigue la lógica del [cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar).
 
 ## Investigación UX
 Éste producto tiene como usuarios a los docentes de colegios, universidades y otros.
-Tiene como objetivo el poder guardar información en modo cifrado y descifrarlo en el momento que sea necesario, de modo que si alguien accede a éste no sepa de qué trata y así mantener la información a salvo.
+Tiene como objetivo el poder transformar información en modo cifrado y descifrarlo en el momento que sea necesario, de manera que si alguien accede a éste no sepa de qué trata y así mantener la información a salvo.
 
 **¿Por qué usarlo?**:
 
@@ -30,7 +30,12 @@ Una de las cosas a las que un docente se expone en su día a día al tener archi
   ![Diagrama_flujo](https://user-images.githubusercontent.com/51327685/58891471-300d7600-86b2-11e9-9a57-36c742dda3fe.jpg)
 
 **Figura 1.** Trabajado por squad en el bootcamp, es la idea que acordamos en que va a funcionar nuestra web, salvo algunas modificaciones personalizadas.
+
 ## Prototipo en papel
+
+Es la primera idea de cómo se visualizará la web, de la estructura que tendrá, el número de pantallas en que estará dividido y la interacción que tendrá cada una.
+
+En éste caso, tal como se ve en la imagen, existirán 4 pantallas:
 
   ![NuevoDocumento 2019-06-05_1](https://user-images.githubusercontent.com/51327685/58960732-64923800-876d-11e9-996a-7dc1f6d82c87.jpg)
 
@@ -39,17 +44,17 @@ Una de las cosas a las que un docente se expone en su día a día al tener archi
 
 ## Feedback
 
-Lo realizamos con una compañera del squad, puedo rescatar que algunos comandos(botones) no tenían asignados nombres claros, por ejemplo el botón **"Continuar”** se confundía con el botón **“Salir”**, así que cambié **“Continuar” por “Volver”**.
+Lo realizamos con una compañera del squad, la observación que me dio fue que algunos comandos(botones) no tenían asignados nombres claros, por ejemplo el botón **"Continuar”** se confundía con el botón **“Salir”**, así que cambié **“Continuar” por “Volver”**.
 
 ## Prototipo en Balsamic
 
 ### Primera vista: Inicio de Sesión
-En ésta primera pantalla se le pide ingresar una contraseña al usuario para iniciar sesión, la contraseña está predeterminada como **"LABORATORIA"**.
+En ésta primera pantalla la interacción con el usuario es la solicitud de  ingresar una contraseña para iniciar sesión, la contraseña está predeterminada como **"LABORATORIA"**.
 
  ![New Mockup 1](https://user-images.githubusercontent.com/51327685/59106610-6f2f0780-88fc-11e9-9b65-09d81fef03cf.png)
 
 ### Vista: Error!
-Se mostrará un mensaje de **"Introduzca una clave valida."** debajo del espacio para la contraseña los 2 primeros intentos.Se (_limpiará y enfocará la caja_) para la contraseña.
+En los 2 primeros intentos se mostrará un mensaje de **"Introduzca una clave valida."** debajo del botón (_'Iniciar Sesión'_); se (_limpiará y enfocará la caja que almacena la contraseña_).
 
 NOTA: También se considera contraseña inválida si el espacio está **"vacío"**.
 
@@ -57,14 +62,14 @@ NOTA: También se considera contraseña inválida si el espacio está **"vacío"
 
   ![New Mockup 1 copy 3](https://user-images.githubusercontent.com/51327685/59106707-b0271c00-88fc-11e9-81a2-3d89e56e156c.png)
 
-En el tercer intento, el mensaje será **"Ha intentado demasiadas veces. Refrescar!"**, de modo que se deshabilitan la caja para ingresar la contraseña y el botón de (_'Iniciar Sesión'_).
+En el **tercer intento**, el mensaje será **"Ha intentado demasiadas veces. Refrescar!"**, de modo que se deshabilitan la caja para ingresar la contraseña y el botón de (_'Iniciar Sesión'_).
 
   ![New Mockup 1 copy 2](https://user-images.githubusercontent.com/51327685/59106745-c7660980-88fc-11e9-8d4d-a9fa6126be03.png)
 
-###Ingresar mensaje:
-Si se inicia sesión exitosamente, se mostrará un espacio para ingresar el mensaje, el **desplazamiento** que desea y la opción de **Cifrar** o **Descifrar**.
+### Ingresar mensaje:
+Si se inicia sesión exitosamente, se mostrará un espacio para ingresar el **mensaje**, el **desplazamiento** que desea y la opción de **Cifrar** o **Descifrar**.
 
-NOTA: el desplazamiento sólo puede ser mayor a cero.
+NOTA: el desplazamiento sólo puede ser mayor a cero y debe escribirse un mensaje.
 
   ![New Mockup 2](https://user-images.githubusercontent.com/51327685/59106778-d8af1600-88fc-11e9-8cea-6f706a8cb483.png)
 

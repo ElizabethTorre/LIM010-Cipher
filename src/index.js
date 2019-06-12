@@ -9,7 +9,8 @@ let p4=document.getElementById('p4'); //Pantalla 4: Despedida
 let header=document.getElementById('Título');
 
 let cont=1; //Contador de intentos
-verificar.addEventListener('click',()=>{
+const enter=(e)=>{
+  e.preventDefault();
 const pass=contraseña.value; //Captura el valor de la contraseña ingresada
     if(pass == clave){
     p1.classList.add('oculto');
@@ -27,8 +28,8 @@ const pass=contraseña.value; //Captura el valor de la contraseña ingresada
       contraseña.focus();
       cont++;
     }
-})
-
+}
+document.getElementById('enter').addEventListener('submit',enter);
 
 //Para cifrar el mensaje
 document.getElementById('cifrar').addEventListener('click',() => {
