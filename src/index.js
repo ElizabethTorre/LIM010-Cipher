@@ -39,8 +39,8 @@ const mensaje = document.getElementById('mensaje').value;
 //Captar el valor de offset
 let offset = document.getElementById('offset').value;
 //Condición para ingresar sólo offset>0;
-if(offset<1 || offset==''){
-  document.getElementById('negativo').innerHTML=' Introduzca un valor mayor a cero.';
+if(offset==0 || offset==''){
+  document.getElementById('negativo').innerHTML=' Introduzca un valor diferente a cero.';
   document.getElementById('offset').value='';
   document.getElementById('offset').focus();
   return document.getElementById('result').value = '';
@@ -91,8 +91,8 @@ document.getElementById('descifrar').addEventListener('click',() =>{
 const mensaje = document.getElementById('mensaje').value;
 //Captar n, numero fijo para cifrar
 let offset = document.getElementById('offset').value;
-if(offset<1 || offset==''){
-  document.getElementById('negativo').innerHTML=' Introduzca un valor mayor a cero.';
+if(offset==0 || offset==''){
+  document.getElementById('negativo').innerHTML=' Introduzca un valor diferente a cero.';
   document.getElementById('offset').value='';
   document.getElementById('offset').focus();
   return document.getElementById('result').value = '';
