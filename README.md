@@ -11,11 +11,17 @@
 - [Prototipo en papel](#prototipo-en-papel)
 - [Feedback](#feedback)
 - [Prototipo en Balsamic](#prototipo-en-balsamic)
+- [Parte opcional o “Hacker edition”](#parte-opcional-o-“Hacker-edition”)
+  - [Alcance del producto](#acance-del-producto)
 
 ## Resumen
 
 Este proyecto trata de darle al usuario acceso(mediante un correcto inicio de sesión) a una herramienta que **cifra o descifra mensajes** de contenido privado.
 Sigue la lógica del [cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar).
+
+
+
+**Figura 1.** Portada de la página web.
 
 ## Investigación UX
 Éste producto tiene como usuarios a los docentes de colegios, universidades y otros.
@@ -29,7 +35,7 @@ Una de las cosas a las que un docente se expone en su día a día al tener archi
 
   ![Diagrama_flujo](https://user-images.githubusercontent.com/51327685/58891471-300d7600-86b2-11e9-9a57-36c742dda3fe.jpg)
 
-**Figura 1.** Trabajado por squad en el bootcamp, es la idea que acordamos en que va a funcionar nuestra web, salvo algunas modificaciones personalizadas.
+**Figura 2.** Trabajado por squad en el bootcamp, es la idea que acordamos en que va a funcionar nuestra web, salvo algunas modificaciones personalizadas.
 
 ## Prototipo en papel
 
@@ -84,3 +90,32 @@ Una vez ingresado correctamente los datos, se mostrará la pantalla de resultado
 Si se elige **Salir**, se mostrará una pantalla de despedida.
 
   ![New Mockup 5](https://user-images.githubusercontent.com/51327685/59106890-12801c80-88fd-11e9-8140-8b4db8b5319c.png)
+
+## Parte opcional o “Hacker edition”
+
+### Alcance del producto
+
+- Permite escribir un mensaje (texto y números) para ser cifrado.
+
+  Si bien se podría restringir el ingreso de números, para el usuario es importante poder hacerlo para mantener la fluidez del mensaje y evitar la edición.
+
+  - En este proyecto, se puede utilizar este alfabeto simple (sin ñ/Ñ):
+    **Cifra/descifra tanto mayúsculas y minúsculas.**
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+    a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+    Los números, espacios y otros caracteres (ñ,Ñ,á,í,ó,ú, ...) que no cumplan la condición de estar dentro del alfabeto no serán afectados.
+
+    Ejemplo: 
+              Mensaje: Cuáles son los divisores de 6?
+              Offset: 1
+              Cifrado: Dvámft tpo mpt ejwjtpsft ef 6?
+              Descifrado: Btákdr rnm knr chuhrnqdr cd 6?
+
+  - Permite ingresar un desplazamiento (offset) a usar en el cifrado y/o descifrado.
+    
+    **Offset positivo:**                                     **Offset negativo:**
+              Mensaje: Hola                                            Mensaje: Hola
+              Offset: 1                                                Offset: -1
+              Cifrado: Ipmb                                            Cifrado: Gnkz
+              Descifrado: Gnkz                                         Descifrado: Ipmb

@@ -17,35 +17,7 @@ body{
   background-attachment: fixed; /*que quede fija yno tenga ningun movimiento*/
   background-size: cover; /* para que se ajuste a cualquier tipo de resolucion o pantalla*/
 }
-@media screen and (max-width:750px){
-  header{
-    margin: 0 auto;
-   height: 50px;
-    
-  }
-  header h1{
-    margin: 0 auto;
-    font-family: 'Righteous', cursive;
-    font-style: none;
-    font-size: 50%;
-  }
-  footer{
-    background-color: red;
-  }
 
-}
-/*@media (max-width:768px ){
-  #p1, header, footer{
-    width: 75%;
-    height: 75%;
-  }
-}
-@media (max-width:480px ){
-  form, header, footer{
-    width: 95%;
-    height: 95%;
-  }
-}*/
 #iniciar{
   width: 194px;
 }
@@ -58,26 +30,29 @@ h4{
   color: aliceblue;
   
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #logo{
-  float: left;
-  width: 110px;
-  height: 110px;
-  border-radius: 55px;
-  position: absolute;
-  margin-left: -250px;
-  margin-top: -5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
 }
 h1{
-  margin: 0 auto;
-  display: inline;
-  
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 45px;
 }
 
 header /*h1*/{
   position: fixed;
   background-color: #ff5733;
   width: 100%;
-  height: 100px;
+  height: 50px;
   left: 0;
   top: 0;
   margin:0 auto;
@@ -90,7 +65,7 @@ h6{
 }
 .textShadow{
   font-family: 'Rancho', cursive;
-  font-size: 80px;
+  font-size: 40px;
   color: white;
   text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
 }
@@ -187,35 +162,62 @@ h2{
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
   left: 0;
-  height: 50px;
+  bottom: 0;
+  margin:0 auto;
   width: 100%;
+  position: fixed;
   background-color: #ff5733;
 }
 footer p{
   font-family: 'Josefin Sans', sans-serif;
-  margin-top: 10px;
-  margin-bottom: 0;
   color: white;
-  font-size: 16px; 
-  
+  font-size: 13px; 
 }
 footer p1{
-  position: absolute;
-  font-size: 13px;
+  font-size: 11px;
   font-style: none;
-  margin-left: -620px;
-  margin-top: -10px;
 }
 footer p2{
-  position: absolute;
-  font-size: 30px;
-  margin-left: 450px;
-  margin-top: -18px;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .oculto{
   display: none;
+}
+
+
+@media screen and (min-width:764px){
+  .textShadow{
+    font-size: 80px;
+  }
+  #logo{
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+  }
+  h1{
+    margin: 0px;
+    margin-left: 20px;
+    margin-right: 140px;
+  }
+  .header{
+    height: 100px;
+  }
+  footer {
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer p{
+    font-size: 16px;    
+  }
+  footer p1{
+    font-size: 13px;  
+  }
+  footer p2{  
+    font-size: 30px; 
+  }
 }

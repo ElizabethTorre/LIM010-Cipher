@@ -19,6 +19,15 @@ describe('cipher', () => {
     it('debería retornar "10 Ñ" para "10 Ñ" con offset 33', ()=>{
       assert.equal(cipher.encode(33,'10 Ñ'),'10 Ñ')
     });
+    it('debería retornar "vwxy" para "abcd" con offset -5', ()=>{
+      assert.equal(cipher.encode(-5,'abcd'),'vwxy')
+    });
+    it('debería retornar "VWXY" para "ABCD" con offset -5', ()=>{
+      assert.equal(cipher.encode(-5,'ABCD'),'VWXY')
+    });
+    it('debería retornar "10 Ñ" para "10 Ñ" con offset -5', ()=>{
+      assert.equal(cipher.encode(-5,'10 Ñ'),'10 Ñ')
+    });
   });
 
   describe('cipher.decode', () => {
@@ -35,6 +44,15 @@ describe('cipher', () => {
     });
     it('debería retornar "1O Ñ" para "1O Ñ" con offset 33', ()=>{
       assert.equal(cipher.decode(33,'10 Ñ'),'10 Ñ')
+    });
+    it('debería retornar "fghi" para "abcd" con offset -5', ()=>{
+      assert.equal(cipher.decode(-5,'abcd'),'fghi')
+    });
+    it('debería retornar "FGHI" para "ABCD" con offset -5', ()=>{
+      assert.equal(cipher.decode(-5,'ABCD'),'FGHI')
+    });
+    it('debería retornar "1O Ñ" para "1O Ñ" con offset -5', ()=>{
+      assert.equal(cipher.decode(-5,'10 Ñ'),'10 Ñ')
     });
   });
 
