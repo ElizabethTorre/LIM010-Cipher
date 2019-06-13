@@ -112,10 +112,16 @@ Si se elige **Salir**, se mostrará una pantalla de despedida.
               Cifrado: Dvámft tpo mpt ejwjtpsft ef 6?
               Descifrado: Btákdr rnm knr chuhrnqdr cd 6?
 
-  - Permite ingresar un desplazamiento (offset) a usar en el cifrado y/o descifrado.
+- Permite ingresar un desplazamiento (offset) a usar en el cifrado y/o descifrado.
     
-    **Offset positivo:**                                     **Offset negativo:**
-              Mensaje: Hola                                            Mensaje: Hola
-              Offset: 1                                                Offset: -1
-              Cifrado: Ipmb                                            Cifrado: Gnkz
-              Descifrado: Gnkz                                         Descifrado: Ipmb
+    **Offset positivo:**                                     
+              Mensaje: Hola                             
+              Offset: 1
+              Cifrado: Ipmb
+              Descifrado: Gnkz
+
+    **Offset negativo:**
+              Mensaje: Hola
+              Offset: -1
+              Cifrado: Gnkz
+              Descifrado: Ipmb
