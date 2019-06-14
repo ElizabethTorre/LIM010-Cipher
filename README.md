@@ -101,8 +101,10 @@ Si se elige **Salir**, se mostrará una pantalla de despedida.
 
   - En este proyecto, se puede utilizar este alfabeto simple (sin ñ/Ñ):
     **Cifra/descifra tanto mayúsculas y minúsculas.**
-    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-    a b c d e f g h i j k l m n o p q r s t u v w x y z
+  
+  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+  a b c d e f g h i j k l m n o p q r s t u v w x y z
 
     Los números, espacios y otros caracteres (ñ,Ñ,á,í,ó,ú, ...) que no cumplan la condición de estar dentro del alfabeto no serán afectados.
 

@@ -1,85 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cifrado César</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <link rel="icon" type="image/jpg" href="../img/logo.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Monoton|Rancho|Righteous&display=swap" rel="stylesheet">
-  </head>
-  <body id="body">
-    <header id="Titulo" class="header">
-      <img id="logo" src="../img/logo.png" />
-      <h1 class="textShadow">Que nadie lo sepa</h1>
-    </header>
-    <main>
-      <section id="p1" class="positionPantalla">
-        <h2>Cifra o descifra ahora!</h2>
-          <section class="inicioSesion">
-              <img src="https://image.flaticon.com/icons/svg/295/295128.svg" id="user"/>
-            <form id="enter" class="position">
-              <h4>Inicio de Sesión</h4>
-              <input type="password" id="pass" class="btn_1" placeholder="&#128272;Ingresa contraseña aqui"/>
-              <input type="submit" id="iniciar" class="btn" value="INICIAR SESIÓN" required/><br><br>
-              <strong><p id="rpta" class="textShadow1"></p></strong>
-            </form>
-          </section>
-      </section>
 
-      <section id="p2" class="oculto positionPantalla">
-        <h2>Cifra o descifra tu mensaje</h2>
-        <!--Solicitamos el mensaje al usuario-->
-        <form id="cajaMensaje">
-          <textarea id="mensaje" type="text" placeholder="Escribe tu mensaje aquí" required="required"></textarea>
-          <input id="limpiar" type="reset" value="Limpiar" class="btn"/>
-        </form><br>
-        <!--Solicitamos el offset (desplazamientos) al usuario-->
-        <form>
-          <label for="of"><strong>Desplazamientos</strong></label>
-          <input id="offset" type="number" min ="1" max="10000" required="required"/>
-          <!--Se muestra un mensaje para no enviar offset=0 ó vacío-->
-          <strong><p id="negativo" class="textShadow1"></p></strong>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cifrado César</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="../img/logo.png" />
+  <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Monoton|Rancho|Righteous&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="body">
+  <header id="Titulo" class="header">
+    <img id="logo" src="../img/logo.png" />
+    <h1 class="textShadow">Que nadie lo sepa</h1>
+  </header>
+  <main>
+    <section id="p1" class="positionPantalla">
+      <!--<h2>Cifra o descifra ahora!</h2>-->
+      <section class="inicioSesion">
+        <img src="https://image.flaticon.com/icons/svg/295/295128.svg" id="user" />
+        <form id="enter" class="position">
+          <h4>Cifra o descifra ahora!</h4>
+          <input type="password" id="pass" class="btn_1" placeholder="&#128272;Ingresa contraseña aqui" />
+          <input type="submit" id="iniciar" class="btn" value="INICIAR SESIÓN" required /><br><br>
+          <strong>
+            <p id="rpta" class="textShadow1"></p>
+          </strong>
         </form>
-        <!--Botones para Cifrar o descifrar el mensaje-->
-        <input id="cifrar" type="button" value="Cifrar" class="btn btn_2" />
-        <input id="descifrar" type="button" value="Descifrar" class="btn btn_2"/>
       </section>
+    </section>
 
-      <section id="p3" class="oculto positionPantalla">
-        <!--Entregamos el mensaje cifrado o descifrado-->
-        <form id="resultado">
+    <section id="p2" class="oculto positionPantalla">
+      <h2>Cifra o descifra tu mensaje</h2>
+      <!--Solicitamos el mensaje al usuario-->
+      <form id="cajaMensaje">
+        <textarea id="mensaje" type="text" placeholder="Escribe tu mensaje aquí" required="required"></textarea>
+        <input id="limpiar" type="reset" value="Limpiar" class="btn" />
+      </form><br>
+      <!--Solicitamos el offset (desplazamientos) al usuario-->
+      <form>
+        <label for="of"><strong>Desplazamientos</strong></label>
+        <input id="offset" type="number" min="1" max="10000" required="required" />
+        <!--Se muestra un mensaje para no enviar offset=0 ó vacío-->
+        <strong>
+          <p id="negativo" class="textShadow1"></p>
+        </strong>
+      </form>
+      <!--Botones para Cifrar o descifrar el mensaje-->
+      <input id="cifrar" type="button" value="Cifrar" class="btn btn_2" />
+      <input id="descifrar" type="button" value="Descifrar" class="btn btn_2" />
+    </section>
+
+    <section id="p3" class="oculto positionPantalla">
+      <!--Entregamos el mensaje cifrado o descifrado-->
+      <form id="resultado">
         <!--Se visualiza la acción realizada-->
         <h2>Mensaje<span id="accion"></span></h2>
-          <textarea id="result" type="text"></textarea><br>
-        </form>
-        <!--Botones para Volver o salir-->
-        <input id="volver" type="button" value="Volver" class="btn btn_2"/>
-        <input id="salir" type="button" value="Salir" class="btn btn_2"/>
-      </section>
+        <textarea id="result" type="text"></textarea><br>
+      </form>
+      <!--Botones para Volver o salir-->
+      <input id="volver" type="button" value="Volver" class="btn btn_2" />
+      <input id="salir" type="button" value="Salir" class="btn btn_2" />
+    </section>
 
-      <section id="p4" class="oculto position">
-        <!--Mensaje de despedida-->
-        <h3 class="textShadow">Hasta Pronto!</h3>
-        <img id="despedida" src="https://media1.tenor.com/images/59591918d9869154c63bd3c638de5af9/tenor.gif?itemid=4652761" />
-      </section>
+    <section id="p4" class="oculto position">
+      <!--Mensaje de despedida-->
+      <h3 class="textShadow">Hasta Pronto!</h3>
+      <img id="despedida"
+        src="https://media1.tenor.com/images/59591918d9869154c63bd3c638de5af9/tenor.gif?itemid=4652761" />
+    </section>
 
-    </main>
-    <footer>
-      <!--Frase-->
-      <p>Si quieres que tu secreto sea guardado, guárdalo tu mismo.</p>
-      <!--Copyright-->
-      <p1><b>Copyright &#169;2019 ElizabethTR. Todos los derechos reservados.</b></p1><br>
-      <!--Logos de redes sociales-->
-      <p2>
-        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-github" aria-hidden="true"></i>
-        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-      </p2><br> 
-    </footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  </main>
+  <footer id="footer">
+    <!--Frase-->
+    <p>Si quieres que tu secreto sea guardado, guárdalo tu mismo.</p>
+    <!--Copyright-->
+    <p1><b>Copyright &#169;2019 ElizabethTR. Todos los derechos reservados.</b></p1><br>
+    <!--Logos de redes sociales-->
+    <p2>
+      <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+    </p2><br>
+  </footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
