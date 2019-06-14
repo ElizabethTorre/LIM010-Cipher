@@ -1,28 +1,38 @@
 window.cipher = { //cipher es un objeto con 2 métodos:encode y  decode . WINDOW quiere decir que está exportado
   encode: (offset, mensaje) => {
-    /* Acá va tu código que cifra*/
+    //Variables para llevar a cabo el cifrado
     let cifrado='';
     let cifradoCesar = 0;
+
+    //CIFRADO CON OFFSET NEGATIVO
+
     if(offset< 0){
+
       for(let i=0; i<mensaje.length; i++){
-     if(mensaje.charCodeAt(i) >= 65 && mensaje.charCodeAt(i) <= 90){
+      //Para mayúsculas
+      if(mensaje.charCodeAt(i) >= 65 && mensaje.charCodeAt(i) <= 90){
       cifradoCesar=(mensaje.charCodeAt(i) - 90 + parseInt(offset)) % 26 + 90;
-    // Para minusculas
-    } else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122){
+      }
+      // Para minúsculas
+      else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122){
       cifradoCesar=(mensaje.charCodeAt(i) - 122 + parseInt(offset)) % 26 + 122;
-    }
-        else {
+      }
+      //Otros caracteres
+      else {
       cifradoCesar=(mensaje.charCodeAt(i));
+      }
+      // Obtener la letra descifrada
+      let mensajeCifrado= String.fromCharCode(cifradoCesar);
+      //Acumular las letras descifradas
+      cifrado+=mensajeCifrado;
+      }
     }
-       // Obtener la letra descifrada
-    let mensajeCifrado= String.fromCharCode(cifradoCesar);
-    //Acumular las letras descifradas
-    cifrado+=mensajeCifrado;
-    }
-    }
+
+    //CIFRADO CON OFFSET POSITIVO
+
     else{
+
       for(let i=0; i<mensaje.length; i++){
-      //Obtener el número del codigo ASCII de cada letra cifrada
       // Para mayusculas
       if(mensaje.charCodeAt(i) >= 65 && mensaje.charCodeAt(i) <= 90 ) {
         cifradoCesar = (mensaje.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
@@ -43,35 +53,47 @@ window.cipher = { //cipher es un objeto con 2 métodos:encode y  decode . WINDOW
     }
     return cifrado;
   },
+
   decode: (offset, mensaje) => { // DECODE es una propiedad conocida como MÉTODO(propiedad que tiene una función) del objeto CIPHER
-    /* Acá va tu código que descifra*/
+    //Variables para llevar a cabo el cifrado    
     let descifrado='';
     let cifradoCesar = 0;
+
+    //DESCIFRADO CON OFFSET NEGATIVO
+
     if(offset<0){
+
       for(let i=0; i<mensaje.length; i++){
+        // Para mayúsculas
         if(mensaje.charCodeAt(i) >= 65 && mensaje.charCodeAt(i) <= 90){
          cifradoCesar=(mensaje.charCodeAt(i) - 65 - parseInt(offset)) % 26 + 65;
-       // Para minusculas
-       } else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122){
+        }
+        // Para minusculas
+        else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122){
          cifradoCesar=(mensaje.charCodeAt(i) - 97 - parseInt(offset)) % 26 + 97;
-       }
-           else {
+        }
+        // Otros caracteres
+        else {
          cifradoCesar=(mensaje.charCodeAt(i));
-       }
-          // Obtener la letra descifrada
-       let mensajeDescifrado= String.fromCharCode(cifradoCesar);
-       //Acumular las letras descifradas
-       descifrado+=mensajeDescifrado;
+        }
+        // Obtener la letra descifrada
+        let mensajeDescifrado= String.fromCharCode(cifradoCesar);
+        //Acumular las letras descifradas
+        descifrado+=mensajeDescifrado;
        }
     }
+
+    //DESCIFRADO CON OFFSET POSITIVO
+
     else{
+
       for(let i=0; i<mensaje.length; i++){
-      //Obtener el número del codigo ASCII de cada letra descifrada
       // Para mayusculas
       if(mensaje.charCodeAt(i) >= 65 && mensaje.charCodeAt(i) <= 90){
         cifradoCesar=(mensaje.charCodeAt(i) - 90 - parseInt(offset)) % 26 + 90;
+      }
       // Para minusculas
-      } else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122){
+      else if (mensaje.charCodeAt(i) >= 97 && mensaje.charCodeAt(i) <= 122){
         cifradoCesar=(mensaje.charCodeAt(i) - 122 - parseInt(offset)) % 26 + 122;
       }
       //otros

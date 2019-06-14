@@ -1,6 +1,4 @@
-/* Acá va tu código */
-/* Acá van tus reglas de estilo */
-/* https://www.youtube.com/watch?v=xCasfsqbEaM&t=16s */
+
 /*
 font-family: 'Acme', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
@@ -17,7 +15,6 @@ body{
   background-attachment: fixed; /*que quede fija yno tenga ningun movimiento*/
   background-size: cover; /* para que se ajuste a cualquier tipo de resolucion o pantalla*/
 }
-
 #iniciar{
   width: 194px;
 }
@@ -27,16 +24,13 @@ body{
 h4{
   font-family: 'Acme', sans-serif;
   font-size: 20px;
-  color: aliceblue;
-  
+  color: aliceblue; 
 }
-
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 #logo{
   width: 50px;
   height: 50px;
@@ -45,10 +39,9 @@ h4{
 h1{
   margin: 0;
   margin-left: 10px;
-  margin-right: 45px;
+  margin-right: 23px;
 }
-
-header /*h1*/{
+header{
   position: fixed;
   background-color: #ff5733;
   width: 100%;
@@ -59,7 +52,7 @@ header /*h1*/{
   padding-bottom: 20px;
   padding-top: 20px;
 }
-h6{
+h3{
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -73,43 +66,34 @@ h6{
   background:rgba(24, 20, 20, 0.637);
   background-size: cover;
   box-sizing: border-box;
-  width: 350px; /*es el ancho de la caja*/
-  height: 300px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  top: 100px;
-  position: absolute;
-  z-index: 0;
-
+  width: 250px;
+  height: 250px;
+  margin-top: 70px;
+  padding-top: 25px;
 }
-
 .positionPantalla{
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  position:relative;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 160px;
-  bottom: 100px;
+  margin-top: 100px ;
 }
 h2{
-  margin:10px;
+  font-size: 20px;
+  margin-bottom:10px;
+  margin-top: 15px;
   font-family: 'Righteous', cursive;
   color: rgb(20, 136, 219);
   text-shadow: -3px -3px 3px white, 3px -3px 3px white, -3px 3px 3px white, 3px 3px 3px white;
 }
 #user{
-  z-index: 1;
-  width:140px;
-  height: 140px;
+  margin-top: -80px;
+  width:100px; 
+  height: 100px;
 }
 .textShadow1{
   font-family: 'Josefin Sans', sans-serif;
-  margin: 0 auto;
-  font-size: 15px;
+  margin-top: 5px;
+  font-size: 13px;
 }
 #rpta{
   color: rgb(248, 249, 250);
@@ -126,14 +110,13 @@ h2{
 .btn{
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #ff5733; /*#72DAB5; #D9C610*/
+  background-color: #ff5733;
   font-weight: bold;
   color:white;
-  font-size: 15px;
+  font-size: 13px;
 }
-
 .btn:hover{
-   background-color: rgb(20, 136, 219); /*#515B63;*/
+   background-color: rgb(20, 136, 219);
    color:white;
  }
  .btn_2{
@@ -141,54 +124,88 @@ h2{
    width: 100px;
  }
 #result{
-  height: 200px;
-  width: 500px;
+  height: 120px;
+  width: 250px;
   box-sizing: border-box;
 }
 #mensaje{
-  height: 200px;
-  width: 400px;
+  height: 120px;
+  width: 250px;
   box-sizing: border-box;
 }
 #limpiar{
-  height: 200px;
-  width: 100px;
-  vertical-align: top;
+  height: 30px;
+  width: 250px;
+  box-sizing: border-box;
 }
 .position{
-  margin-top: 60px;
   text-align: center;
-
 }
-
+#despedida{
+  width: 250px;
+}
 footer {
-  display: flex;
-  flex-direction: column-reverse;
+  right: 0;
   left: 0;
   bottom: 0;
-  margin:0 auto;
-  width: 100%;
+  padding: 8px;
   position: fixed;
   background-color: #ff5733;
 }
 footer p{
   font-family: 'Josefin Sans', sans-serif;
   color: white;
-  font-size: 13px; 
+  font-size: 11px;
+  margin: 0px;
 }
 footer p1{
-  font-size: 11px;
-  font-style: none;
+  font-size: 9px;
 }
 footer p2{
-  font-size: 20px;
-  margin-bottom: 8px;
+  font-size: 13px;
 }
-
 .oculto{
   display: none;
 }
 
+
+@media screen and (min-width:375px){
+  h1{
+    margin-right: 45px;
+  }
+  .positionPantalla{
+    margin-top: 150px;
+  }
+  .inicioSesion{
+    margin-top: 80px;
+  }
+  h2{
+    margin-top: 25px;
+  }
+  #result{
+    height: 170px;
+    width: 300px;
+  }
+  #mensaje{
+    height: 170px;
+    width: 300px;
+  }
+  #limpiar{
+    width: 300px;
+  }
+  #despedida{
+    width: 300px;
+  }
+  footer p{
+    font-size: 13px;
+  }
+  footer p1{
+    font-size: 11px;
+  }
+  footer p2{
+    font-size: 20px; 
+  }
+}
 
 @media screen and (min-width:764px){
   .textShadow{
@@ -205,19 +222,58 @@ footer p2{
     margin-right: 140px;
   }
   .header{
-    height: 100px;
+    height: 85px;
   }
-  footer {
+  footer{
+    display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     justify-content: space-around;
   }
   footer p{
-    font-size: 16px;    
+    font-size: 16px; 
+    margin: 8px 0px;   
   }
   footer p1{
     font-size: 13px;  
   }
   footer p2{  
     font-size: 30px; 
+    width: 160px;
+  }
+  .textShadow1{
+    font-size: 15px;
+  }
+  .btn{
+    font-size: 15px;
+  }
+  #user{
+    margin-top: -100px;
+    width:140px; 
+    height: 140px;
+  }
+  .inicioSesion{
+    width: 350px; 
+    height: 300px;
+    padding-top: 35px;  
+  }
+  .positionPantalla{
+    margin-top: 120px;
+  }
+  #mensaje{
+    height: 200px;
+    width: 400px;
+  }
+  #limpiar{
+    height: 200px;
+    width: 100px;
+    vertical-align: top;
+  }
+  #result{
+    height: 200px;
+    width: 500px;
+  }
+  #despedida{
+    width: 400px;
   }
 }

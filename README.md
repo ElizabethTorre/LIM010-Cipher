@@ -19,7 +19,7 @@
 Este proyecto trata de darle al usuario acceso(mediante un correcto inicio de sesión) a una herramienta que **cifra o descifra mensajes** de contenido privado.
 Sigue la lógica del [cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar).
 
-
+  ![portada](https://user-images.githubusercontent.com/51327685/59512892-51731c80-8e7f-11e9-9798-2a5407b3dbf8.png)
 
 **Figura 1.** Portada de la página web.
 
@@ -107,21 +107,21 @@ Si se elige **Salir**, se mostrará una pantalla de despedida.
     Los números, espacios y otros caracteres (ñ,Ñ,á,í,ó,ú, ...) que no cumplan la condición de estar dentro del alfabeto no serán afectados.
 
     Ejemplo: 
-              Mensaje: Cuáles son los divisores de 6?
-              Offset: 1
-              Cifrado: Dvámft tpo mpt ejwjtpsft ef 6?
-              Descifrado: Btákdr rnm knr chuhrnqdr cd 6?
+    - Mensaje: Cuáles son los divisores de 6?
+    - Offset: 1
+    - Cifrado: Dvámft tpo mpt ejwjtpsft ef 6?
+    - Descifrado: Btákdr rnm knr chuhrnqdr cd 6?
 
 - Permite ingresar un desplazamiento (offset) a usar en el cifrado y/o descifrado.
     
-    **Offset positivo:**                                     
-              Mensaje: Hola                             
-              Offset: 1
-              Cifrado: Ipmb
-              Descifrado: Gnkz
+  **Offset positivo:**                                     
+  - Mensaje: Hola                             
+  - Offset: 1
+  - Cifrado: Ipmb
+  - Descifrado: Gnkz
 
-    **Offset negativo:**
-              Mensaje: Hola
-              Offset: -1
-              Cifrado: Gnkz
-              Descifrado: Ipmb
+  **Offset negativo:**
+  - Mensaje: Hola
+  - Offset: -1
+  - Cifrado: Gnkz
+  - Descifrado: Ipmb
