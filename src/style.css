@@ -79,6 +79,7 @@ h1{
   width: 250px;
   height: 250px;
   padding-top: 25px;
+  margin-top: 65px;
   border-radius: 5px;
 }
 
@@ -202,7 +203,7 @@ footer p2{
 .visible{
   visibility: hidden;
 }
-
+/*
 @media screen and (min-width:375px){
   h1{
     margin-right: 30px;
@@ -229,7 +230,7 @@ footer p2{
   footer p2{
     font-size: 20px; 
   }
-}
+}*/
 
 @media screen and (min-width:764px){
   body{
@@ -258,7 +259,8 @@ footer p2{
   .inicioSesion{
     width: 350px; 
     height: 300px;
-    padding-top: 35px;  
+    padding-top: 35px;
+    margin-top: 80px;  
   }
   .textShadow1{
     font-size: 15px;
