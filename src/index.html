@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link rel="icon" type="image/jpg" href="../img/logo.png" />
-  <link href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Monoton|Rancho|Righteous&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css?family=Acme|Josefin+Sans|Monoton|Rancho|Righteous|Sedgwick+Ave+Display|Rock+Salt&display=swap"
     rel="stylesheet">
 </head>
 
@@ -19,13 +20,13 @@
   </header>
   <main>
     <section id="p1" class="positionPantalla">
-      <!--<h2>Cifra o descifra ahora!</h2>-->
       <section class="inicioSesion">
-        <img src="https://image.flaticon.com/icons/svg/295/295128.svg" id="user" />
+        <img id="user" src="https://image.flaticon.com/icons/svg/295/295128.svg" />
         <form id="enter" class="position">
           <h4>Cifra o descifra ahora!</h4>
-          <input type="password" id="pass" class="btn_1" placeholder="&#128272;Ingresa contraseña aqui" />
-          <input type="submit" id="iniciar" class="btn" value="INICIAR SESIÓN" required /><br><br>
+          <input type="password" id="pass" placeholder="&#128272;Ingresa contraseña aqui" />
+          <input type="submit" id="iniciar" value="INICIAR SESIÓN" required /><br><br>
+          <!--Respuesta al los ingresos incorrectos-->
           <strong>
             <p id="rpta" class="textShadow1"></p>
           </strong>
@@ -38,6 +39,7 @@
       <!--Solicitamos el mensaje al usuario-->
       <form id="cajaMensaje">
         <textarea id="mensaje" type="text" placeholder="Escribe tu mensaje aquí" required="required"></textarea>
+        <!--Opción de Limpiar el texarea-->
         <input id="limpiar" type="reset" value="Limpiar" class="btn" />
       </form><br>
       <!--Solicitamos el offset (desplazamientos) al usuario-->
@@ -46,7 +48,7 @@
         <input id="offset" type="number" min="1" max="10000" required="required" />
         <!--Se muestra un mensaje para no enviar offset=0 ó vacío-->
         <strong>
-          <p id="negativo" class="textShadow1"></p>
+          <p id="negativo" class="textShadow1"> </p>
         </strong>
       </form>
       <!--Botones para Cifrar o descifrar el mensaje-->
@@ -58,15 +60,17 @@
       <!--Entregamos el mensaje cifrado o descifrado-->
       <form id="resultado">
         <!--Se visualiza la acción realizada-->
-        <h2>Mensaje<span id="accion"></span></h2>
-        <textarea id="result" type="text"></textarea><br>
+        <h2>Lo hemos<span id="accion"></span></h2>
+        <textarea id="result" type="text"></textarea>
+        <!--Opción de Copiar el texto resultado-->
+        <button id="copiar" class="btn">Copiar</button>
       </form>
       <!--Botones para Volver o salir-->
       <input id="volver" type="button" value="Volver" class="btn btn_2" />
       <input id="salir" type="button" value="Salir" class="btn btn_2" />
     </section>
 
-    <section id="p4" class="oculto position">
+    <section id="p4" class="oculto positionPantalla">
       <!--Mensaje de despedida-->
       <h3 class="textShadow">Hasta Pronto!</h3>
       <img id="despedida"

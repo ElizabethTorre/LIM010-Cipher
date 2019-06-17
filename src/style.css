@@ -1,212 +1,220 @@
 
 /*
+font-family: 'Sedgwick Ave Display', cursive;
 font-family: 'Acme', sans-serif;
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Monoton', cursive;
 font-family: 'Rancho', cursive;
 font-family: 'Righteous', cursive;
 */
+
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
 
 body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
   text-align: center;
   background-image: url('../img/img3.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed; /*que quede fija yno tenga ningun movimiento*/
   background-size: cover; /* para que se ajuste a cualquier tipo de resolucion o pantalla*/
 }
-#iniciar{
-  width: 194px;
-}
-#pass{
-  width: 190px;
-}
-h4{
-  font-family: 'Acme', sans-serif;
-  font-size: 20px;
-  color: aliceblue; 
+main{
+  display:flex;
+  justify-content: center;
+  flex:1;
 }
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(247, 111, 33, 0.788);
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 #logo{
   width: 50px;
   height: 50px;
   border-radius: 25px;
 }
+
+/*QUE NADIE LO SEPA*/
 h1{
   margin: 0;
   margin-left: 10px;
   margin-right: 23px;
 }
-header{
-  position: fixed;
-  /*background: rgba(247, 111, 33, 0.788);*/
-  /*background-color: #ff5733;*/
-  width: 100%;
-  height: 50px;
-  left: 0;
-  top: 0;
-  margin:0 auto;
-  padding-bottom: 20px;
-  padding-top: 20px;
+#pass{
+  width: 190px;
+  margin:5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
 }
-h2{
-  font-size: 20px;
-  margin-bottom:10px;
-  margin-top: 15px;
-  font-family: 'Righteous', cursive;
-  color: rgb(20, 136, 219);
-  text-shadow: -3px -3px 3px white, 3px -3px 3px white, -3px 3px 3px white, 3px 3px 3px white;
+
+/*BOTÓN INICIAR SESIÓN*/
+#iniciar{
+  width: 194px;
+  background-color: rgb(20, 136, 219);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color:white;
+  font-size: 13px;
+  border-radius: 2px;
 }
-h3{
-  margin-top: 30px;
-  margin-bottom: 30px;
+#iniciar:hover{
+  background-color: #ff5733;
+  color:white;
 }
-.textShadow{
-  font-family: 'Rancho', cursive;
-  font-size: 40px;
-  color: white;
-  text-shadow: -3px -3px 3px #0000DF, 3px -3px 3px #0000DF, -3px 3px 3px #0000DF, 3px 3px 3px #0000DF;
-}
+
+/*CONTENEDOR DE CAJA INICIO*/
 .inicioSesion{
   background:rgba(24, 20, 20, 0.637);
   background-size: cover;
   box-sizing: border-box;
   width: 250px;
   height: 250px;
-  margin-top: 100px;
   padding-top: 25px;
+  border-radius: 5px;
 }
+
+/*CONTENEDOR DE PANTALLA*/
 .positionPantalla{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
 }
-#p1{
-  margin-top: 100px ;
-}
-#p2{
-  margin-top: 120px ;
-}
-#p3{
-  margin-top: 150px ;
-}
-#p4{
-  margin-top: 140px ;
-}
+/*IMG USUARIO*/
 #user{
   margin-top: -80px;
   width:100px; 
   height: 100px;
 }
+
+/*Cifra o descifra ahora!*/
+h4{
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+  color: aliceblue; 
+}
+
+/*Cifra o descifra tu mensaje*/
+h2{
+  font-size: 30px;
+  margin-bottom:10px;
+  margin-top: 15px;
+  font-family: 'Rancho', cursive;
+  color: rgb(137, 194, 235);
+  text-shadow: -3px -3px 3px rgb(49, 48, 48), 3px -3px 3px rgb(49, 48, 48), -3px 3px 3px rgb(49, 48, 48), 3px 3px 3px rgb(49, 48, 48);
+}
+
+/*Hasta Pronto!*/
+h3{
+  margin-top:-100px;
+}
+/* HEADER Y DESPEDIDA*/
+.textShadow{
+  font-family: 'Rock Salt', cursive;
+  font-size: 20px;
+  color: white;
+  text-shadow: -3px -3px 3px rgb(53, 53, 105), 3px -3px 3px rgb(53, 53, 105), -3px 3px 3px rgb(53, 53, 105), 3px 3px 3px rgb(53, 53, 105);
+}
+
+/*MENSAJES DE ERROR*/
 .textShadow1{
   font-family: 'Josefin Sans', sans-serif;
   margin-top: 5px;
   font-size: 13px;
 }
+
+/*CONTRASEÑA INVÁLIDA*/
 #rpta{
   color: rgb(248, 249, 250);
 }
+
+/*OFFSET INVÁLIDO*/
 #negativo{
   color: rgb(190, 4, 4);
-}
-.btn_1{
-  margin:5px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  text-align: center;
 }
 .btn{
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #ff5733;
+  background-color: rgb(69, 72, 75);
   font-weight: bold;
   color:white;
   font-size: 13px;
+  border-radius: 4px;
 }
 .btn:hover{
    background-color: rgb(20, 136, 219);
    color:white;
- }
- .btn_2{
+}
+
+/*BOTONES CIFRAR/DESCIFRAR/SALIR/VOLVER */
+.btn_2{
    margin-top: 15px;
    width: 100px;
- }
-#result{
+}
+#mensaje, #result{
   height: 120px;
   width: 250px;
   box-sizing: border-box;
 }
-#mensaje{
-  height: 120px;
-  width: 250px;
-  box-sizing: border-box;
-}
-#limpiar{
+#limpiar, #copiar{
   height: 30px;
   width: 250px;
   box-sizing: border-box;
 }
-.position{
-  text-align: center;
-}
+
+/*GIF MINION*/
 #despedida{
   width: 250px;
 }
 footer {
-  right: 0;
-  left: 0;
-  bottom: 0;
+  margin: 0;
   padding: 8px;
-  position: fixed;
   background: rgba(247, 111, 33, 0.788);
-  /*background-color: #ff5733;*/
 }
+/*FRASE*/
 footer p{
   font-family: 'Josefin Sans', sans-serif;
   color: white;
   font-size: 11px;
   margin: 0px;
 }
+/*COPYRIGHT*/
 footer p1{
   font-size: 9px;
 }
+/*REDES*/
 footer p2{
   font-size: 13px;
 }
 .oculto{
   display: none;
 }
-
+.visible{
+  visibility: hidden;
+}
 
 @media screen and (min-width:375px){
   h1{
-    margin-right: 45px;
-  }
-  #p1{
-    margin-top: 150px ;
-  }
-  #p2{
-    margin-top: 130px ;
-  }
-  #p3, #p4{
-    margin-top: 160px ;
+    margin-right: 30px;
   }
   .inicioSesion{
     margin-top: 80px;
   }
-  #result{
+  #mensaje, #result{
     height: 170px;
     width: 300px;
   }
-  #mensaje{
-    height: 170px;
-    width: 300px;
-  }
-  #limpiar{
+  #limpiar, #copiar{
     width: 300px;
   }
   #despedida{
@@ -222,17 +230,12 @@ footer p2{
     font-size: 20px; 
   }
 }
-@media screen and (min-width:411px){
-  #p1, #p3, #p4{
-    margin-top: 180px ;
-  }
-  #p2{
-    margin-top: 140px ;
-  }
-}
+
 @media screen and (min-width:764px){
-  .textShadow{
-    font-size: 80px;
+  body{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr auto;
   }
   #logo{
     width: 110px;
@@ -242,11 +245,39 @@ footer p2{
   h1{
     margin: 0px;
     margin-left: 20px;
-    margin-right: 140px;
+    margin-right: 100px;
   }
-  .header{
-    height: 85px;
+  .textShadow{
+    font-size: 40px;
   }
+  #user{
+    margin-top: -100px;
+    width:140px; 
+    height: 140px;
+  }
+  .inicioSesion{
+    width: 350px; 
+    height: 300px;
+    padding-top: 35px;  
+  }
+  .textShadow1{
+    font-size: 15px;
+  }
+  .btn{
+    font-size: 15px;
+  }
+  #mensaje, #result{
+    height: 200px;
+    width: 400px;
+  }
+  #limpiar, #copiar{
+    height: 200px;
+    width: 100px;
+    vertical-align: top;
+  }
+  #despedida{
+    width: 400px;
+  } 
   footer{
     display: flex;
     align-items: center;
@@ -263,40 +294,5 @@ footer p2{
   footer p2{  
     font-size: 30px; 
     width: 160px;
-  }
-  .textShadow1{
-    font-size: 15px;
-  }
-  .btn{
-    font-size: 15px;
-  }
-  #user{
-    margin-top: -100px;
-    width:140px; 
-    height: 140px;
-  }
-  .inicioSesion{
-    width: 350px; 
-    height: 300px;
-    padding-top: 35px;  
-  }
-  #p1, #p2, #p3, #p4{
-    margin-top: 160px ;
-  }
-  #mensaje{
-    height: 200px;
-    width: 400px;
-  }
-  #limpiar{
-    height: 200px;
-    width: 100px;
-    vertical-align: top;
-  }
-  #result{
-    height: 200px;
-    width: 500px;
-  }
-  #despedida{
-    width: 400px;
   }
 }

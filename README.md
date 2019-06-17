@@ -11,15 +11,19 @@
 - [Prototipo en papel](#prototipo-en-papel)
 - [Feedback](#feedback)
 - [Prototipo en Balsamic](#prototipo-en-balsamic)
+  - [Primera vista: Inicio de Sesión](#Primera-vista-Inicio-de-Sesión)
+  - [Ingresar mensaje y desplazamiento](#Ingresar-mensaje-y-desplazamiento)
+  - [Ejemplo Cifrando/Descifrando mensaje](#Ejemplo-Cifrando/Descifrando-mensaje)
+- [Corrida desde la web](#Corrida-desde-la-web)
 - [Parte opcional o “Hacker edition”](#parte-opcional-o-“Hacker-edition”)
-  - [Alcance del producto](#acance-del-producto)
+  - [Alcance del producto](#alcance-del-producto)
 
 ## Resumen
 
 Este proyecto trata de darle al usuario acceso(mediante un correcto inicio de sesión) a una herramienta que **cifra o descifra mensajes** de contenido privado.
 Sigue la lógica del [cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar).
 
-  ![portada](https://user-images.githubusercontent.com/51327685/59512892-51731c80-8e7f-11e9-9798-2a5407b3dbf8.png)
+  ![portada](https://user-images.githubusercontent.com/51327685/59573657-af6b5400-9079-11e9-837c-05c427276866.png)
 
 **Figura 1.** Portada de la página web.
 
@@ -27,15 +31,15 @@ Sigue la lógica del [cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3
 Éste producto tiene como usuarios a los docentes de colegios, universidades y otros.
 Tiene como objetivo el poder transformar información en modo cifrado y descifrarlo en el momento que sea necesario, de manera que si alguien accede a éste no sepa de qué trata y así mantener la información a salvo.
 
-**¿Por qué usarlo?**:
+### ¿Por qué usarlo?
 
 Una de las cosas a las que un docente se expone en su día a día al tener archivos de futuras prácticas, exámenes, notas y otros en memorias usb y/o la nube es que por un descuido externos puedan acceder a ésta información y se filtre. Tener la posibilidad de encriptar archivos de alta importancia y descifrarlo sólo cuando lo necesite es una de las mejores maneras de proteger la información.
 
 ## Diagrama de flujo
 
-  ![Diagrama_flujo](https://user-images.githubusercontent.com/51327685/58891471-300d7600-86b2-11e9-9a57-36c742dda3fe.jpg)
+Trabajado por squad en el bootcamp, es la idea que acordamos en que va a funcionar nuestra web, salvo algunas modificaciones personalizadas.
 
-**Figura 2.** Trabajado por squad en el bootcamp, es la idea que acordamos en que va a funcionar nuestra web, salvo algunas modificaciones personalizadas.
+  ![Diagrama_flujo](https://user-images.githubusercontent.com/51327685/58891471-300d7600-86b2-11e9-9a57-36c742dda3fe.jpg)
 
 ## Prototipo en papel
 
@@ -50,46 +54,72 @@ En éste caso, tal como se ve en la imagen, existirán 4 pantallas:
 
 ## Feedback
 
-Lo realizamos con una compañera del squad, la observación que me dio fue que algunos comandos(botones) no tenían asignados nombres claros, por ejemplo el botón **"Continuar”** se confundía con el botón **“Salir”**, así que cambié **“Continuar” por “Volver”**.
+Lo realizamos con una compañera del squad, la observación que me dio fue que algunos comandos(botones) no tenían asignados nombres claros, por ejemplo el botón **`Continuar`** se confundía con el botón **`Salir`**, así que cambié **`Continuar`** por **`Volver`**. Más adelante se saltó la idea de añadir un botón **`Copiar`**.
 
 ## Prototipo en Balsamic
 
 ### Primera vista: Inicio de Sesión
-En ésta primera pantalla la interacción con el usuario es la solicitud de  ingresar una contraseña para iniciar sesión, la contraseña está predeterminada como **"LABORATORIA"**.
 
- ![New Mockup 1](https://user-images.githubusercontent.com/51327685/59106610-6f2f0780-88fc-11e9-9b65-09d81fef03cf.png)
+En ésta primera pantalla la interacción con el usuario es la solicitud de  ingresar una contraseña para iniciar sesión. La contraseña está predeterminada como **"LABORATORIA"**.
 
-### Vista: Error!
-En los 2 primeros intentos se mostrará un mensaje de **"Introduzca una clave valida."** debajo del botón (_'Iniciar Sesión'_); se (_limpiará y enfocará la caja que almacena la contraseña_).
+ ![1](https://user-images.githubusercontent.com/51327685/59571128-3e22a580-9067-11e9-96af-eeda2d1c9cff.png)
 
-NOTA: También se considera contraseña inválida si el espacio está **"vacío"**.
+- **Vista: Error!**
 
-  ![New Mockup 1 copy](https://user-images.githubusercontent.com/51327685/59106679-9be31f00-88fc-11e9-90c6-c3e8ec1a9137.png)
+En los 2 primeros intentos se mostrará un mensaje de _**Introduzca una clave valida.**_ debajo del botón (_'Iniciar Sesión'_); se (_limpiará y enfocará la caja que almacena la contraseña_).
 
-  ![New Mockup 1 copy 3](https://user-images.githubusercontent.com/51327685/59106707-b0271c00-88fc-11e9-81a2-3d89e56e156c.png)
+NOTA: También se considera contraseña inválida si el espacio está _**vacío**_.
 
-En el **tercer intento**, el mensaje será **"Ha intentado demasiadas veces. Refrescar!"**, de modo que se deshabilitan la caja para ingresar la contraseña y el botón de (_'Iniciar Sesión'_).
+  ![1 1error](https://user-images.githubusercontent.com/51327685/59571137-5266a280-9067-11e9-8435-e700cbaa6613.png)
 
-  ![New Mockup 1 copy 2](https://user-images.githubusercontent.com/51327685/59106745-c7660980-88fc-11e9-8d4d-a9fa6126be03.png)
+  ![1 2error](https://user-images.githubusercontent.com/51327685/59571143-74f8bb80-9067-11e9-81db-cf29dfcfd93c.png)
 
-### Ingresar mensaje:
-Si se inicia sesión exitosamente, se mostrará un espacio para ingresar el **mensaje**, el **desplazamiento** que desea y la opción de **Cifrar** o **Descifrar**.
+En el _**tercer intento**_, el mensaje será _**Ha intentado demasiadas veces. Refrescar!**_, de modo que se deshabilitan la caja para ingresar la contraseña y el botón de (_'Iniciar Sesión'_).
 
-NOTA: el desplazamiento sólo puede ser mayor a cero y debe escribirse un mensaje.
+  ![1 3error](https://user-images.githubusercontent.com/51327685/59571147-7c1fc980-9067-11e9-9cb2-bde5d30b1081.png)
 
-  ![New Mockup 2](https://user-images.githubusercontent.com/51327685/59106778-d8af1600-88fc-11e9-8cea-6f706a8cb483.png)
+### Ingresar mensaje y desplazamiento
 
-En caso de que el número ingresado en el desplazamiento sea menor o igual a cero, se mostrará un mensaje debajo de la casilla indicando que debe ingresar un número mayor a cero, se limpia y enfoca el casillero.
+Si se inicia sesión exitosamente, se mostrará un espacio para ingresar el **`mensaje`**, el **`desplazamiento`** que desea y la opción de **`Cifrar`** o **`Descifrar`**.
 
-  ![New Mockup 2 copy](https://user-images.githubusercontent.com/51327685/59106817-ea90b900-88fc-11e9-8f3c-7b442e9c6d05.png)
+NOTA: el desplazamiento debe ser diferente a cero y debe escribirse un mensaje.
 
-Una vez ingresado correctamente los datos, se mostrará la pantalla de resultado, con la opción de **Volver** o **Salir**.
+  ![2](https://user-images.githubusercontent.com/51327685/59571151-95287a80-9067-11e9-96c7-6b3cea07022f.png)
 
-  ![New Mockup 3](https://user-images.githubusercontent.com/51327685/59106852-fbd9c580-88fc-11e9-8301-c9ce830709ca.png)
+- **Vista: Error!**
 
-Si se elige **Salir**, se mostrará una pantalla de despedida.
+En caso de ingresar un desplazamiento inválido o dejarlo vacío se mostrará un mensaje debajo de la casilla indicando que debe ingresar un número diferente a cero, se limpia y enfoca el casillero.
 
-  ![New Mockup 5](https://user-images.githubusercontent.com/51327685/59106890-12801c80-88fd-11e9-8140-8b4db8b5319c.png)
+  ![2 1error](https://user-images.githubusercontent.com/51327685/59571168-d3be3500-9067-11e9-8f72-48e8a6d5b6fa.png)
+
+Tampoco está permitido intentar ejecutar el cifrado o descifrado si no se ingresa el mensaje:
+
+  ![2 2error](https://user-images.githubusercontent.com/51327685/59571386-9fe40f00-9069-11e9-96df-d340423cbf6a.png)
+
+### Ejemplo Cifrando/Descifrando mensaje
+
+  ![2 ejm](https://user-images.githubusercontent.com/51327685/59571391-b0948500-9069-11e9-8083-3bc7e940bacc.png)
+
+A continuación de muestra el resultado indicando la acción realizada con el encabezado _**Lo hemos Cifrado**_ y las opciones de:
+**`Volver`** : Si se desea realizar una acción diferente o añadir algo al mensaje.
+**`Salir`** : En caso de haber concluido la acción.
+**`Copiar`** : Facilita la selección del texto resultado.
+
+  ![3 ejm](https://user-images.githubusercontent.com/51327685/59571435-239dfb80-906a-11e9-9657-a023b6fe1300.png)
+
+En respuesta a la opción **`Salir`**, se mostrará una pantalla de despedida.
+
+  ![4](https://user-images.githubusercontent.com/51327685/59571563-b12e1b00-906b-11e9-8b90-21141cf876a1.png)
+
+## Corrida desde la web
+
+Se aplicó el mismo ejemplo del `Prototipo en Balsamic`:
+
+  ![webPhone_1](https://user-images.githubusercontent.com/51327685/59573683-beea9d00-9079-11e9-9407-e5c4f1713c51.png)
+
+  ![webPhone_2](https://user-images.githubusercontent.com/51327685/59573767-2acd0580-907a-11e9-9ab9-b086ab4fbca9.png)
+
+  ![webPhone_3](https://user-images.githubusercontent.com/51327685/59573787-3ae4e500-907a-11e9-8392-fa0167a52e66.png)
 
 ## Parte opcional o “Hacker edition”
 
@@ -100,7 +130,8 @@ Si se elige **Salir**, se mostrará una pantalla de despedida.
   Si bien se podría restringir el ingreso de números, para el usuario es importante poder hacerlo para mantener la fluidez del mensaje y evitar la edición.
 
   - En este proyecto, se puede utilizar este alfabeto simple (sin ñ/Ñ):
-    **Cifra/descifra tanto mayúsculas y minúsculas.**
+    
+    Cifra/descifra tanto `mayúsculas` y `minúsculas`.
   
   A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
@@ -114,15 +145,15 @@ Si se elige **Salir**, se mostrará una pantalla de despedida.
     - Cifrado: Dvámft tpo mpt ejwjtpsft ef 6?
     - Descifrado: Btákdr rnm knr chuhrnqdr cd 6?
 
-- Permite ingresar un desplazamiento (offset) a usar en el cifrado y/o descifrado.
+- Permite ingresar un desplazamiento `(offset)` a usar en el cifrado y/o descifrado.
     
-  **Offset positivo:**                                     
+  **`Offset positivo`**:                                   
   - Mensaje: Hola                             
   - Offset: 1
   - Cifrado: Ipmb
   - Descifrado: Gnkz
 
-  **Offset negativo:**
+  **`Offset negativo`**:
   - Mensaje: Hola
   - Offset: -1
   - Cifrado: Gnkz

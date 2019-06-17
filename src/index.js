@@ -8,13 +8,13 @@ let p4 = document.getElementById('p4'); //Pantalla 4: Despedida
 let header = document.getElementById('Titulo');
 
 let cont = 1; //Contador de intentos
-const enter = (e) => { //Obedecer a la tecla enter
-  e.preventDefault();
+document.getElementById('enter').addEventListener('submit', (enter) => {
+  enter.preventDefault()
   const pass = contraseña.value; //Captura el valor de la contraseña ingresada
   if (pass == clave) {
     p1.classList.add('oculto');
     p2.classList.remove('oculto');
-    document.getElementById('body').style.backgroundImage = 'url(\'../img/img1.jpeg\')';
+    document.getElementById('body').style.backgroundImage = 'url(\'../img/img2.jpg\')';
   }
   else if (cont > 2) {
     document.getElementById('rpta').innerHTML = ' Ha intentado demasiadas veces. REFRESCAR!';
@@ -27,8 +27,7 @@ const enter = (e) => { //Obedecer a la tecla enter
     contraseña.focus();
     cont++;
   }
-}
-document.getElementById('enter').addEventListener('submit', enter);
+})
 
 //Para cifrar el mensaje
 document.getElementById('cifrar').addEventListener('click', () => {
@@ -92,9 +91,15 @@ document.getElementById('volver').addEventListener('click', () => {
 })
 
 document.getElementById('salir').addEventListener('click', () => {
-  header.classList.add('oculto');
+  header.classList.add('visible');
   p3.classList.add('oculto');
   p4.classList.remove('oculto');
   document.getElementById('body').style.background = '#ff5733';
   document.getElementById('footer').style.background = '#ff5733';
+})
+
+document.getElementById('copiar').addEventListener('click', (copiar) => {
+  copiar.preventDefault();
+  document.getElementById('result').select();
+  document.execCommand('copy');
 })
