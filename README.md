@@ -13,9 +13,9 @@
 - [Prototipo en Balsamic](#prototipo-en-balsamic)
   - [Primera vista: Inicio de Sesión](#Primera-vista-Inicio-de-Sesión)
   - [Ingresar mensaje y desplazamiento](#Ingresar-mensaje-y-desplazamiento)
-  - [Ejemplo Cifrando/Descifrando mensaje](#Ejemplo-Cifrando-Descifrando-mensaje)
+  - [Ejemplo Cifrando/Descifrando mensaje](#Ejemplo-CifrandoDescifrando-mensaje)
 - [Corrida desde la web](#Corrida-desde-la-web)
-- [Parte opcional o “Hacker edition”](#parte-opcional-o-Hacker-edition)
+- [Parte opcional o “Hacker edition”](#parte-opcional-o-hacker-edition)
   - [Alcance del producto](#alcance-del-producto)
 
 ## Resumen
