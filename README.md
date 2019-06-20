@@ -5,6 +5,7 @@
 
 - [Índice](#índice)
 - [Resumen](#resumen)
+  - [Alcance del producto](#alcance-del-producto)
 - [Investigación UX](#investigación-UX)
   - [¿Por qué usarlo?](#por-qué-usarlo)
 - [Diagrama de flujo](#diagrama-de-flujo)
@@ -15,8 +16,6 @@
   - [Ingresar mensaje y desplazamiento](#Ingresar-mensaje-y-desplazamiento)
   - [Ejemplo Cifrando/Descifrando mensaje](#Ejemplo-CifrandoDescifrando-mensaje)
 - [Corrida desde la web](#Corrida-desde-la-web)
-- [Parte opcional o “Hacker edition”](#parte-opcional-o-hacker-edition)
-  - [Alcance del producto](#alcance-del-producto)
 
 ## Resumen
 
@@ -26,6 +25,42 @@ Sigue la lógica del [cifrado César](https://es.wikipedia.org/wiki/Cifrado_C%C3
   ![portada](https://user-images.githubusercontent.com/51327685/59573657-af6b5400-9079-11e9-837c-05c427276866.png)
 
 **Figura 1.** Portada de la página web.
+
+### Alcance del producto
+
+- Permite escribir un mensaje (texto y números) para ser cifrado.
+
+  Si bien se podría restringir el ingreso de números, para el usuario es importante poder hacerlo para mantener la fluidez del mensaje y evitar la edición.
+
+  - En este proyecto, se puede utilizar este alfabeto simple (sin ñ/Ñ):
+    
+    Cifra/descifra tanto `mayúsculas` y `minúsculas`.
+  
+  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+  a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+    Los números, espacios y otros caracteres (ñ,Ñ,á,í,ó,ú, ...) que no cumplan la condición de estar dentro del alfabeto no serán afectados.
+
+    Ejemplo: 
+    - Mensaje: Cuáles son los divisores de 6?
+    - Offset: 1
+    - Cifrado: Dvámft tpo mpt ejwjtpsft ef 6?
+    - Descifrado: Btákdr rnm knr chuhrnqdr cd 6?
+
+- Permite ingresar un desplazamiento `(offset)` a usar en el cifrado y/o descifrado.
+    
+  **`Offset positivo`**:                                   
+  - Mensaje: Hola                             
+  - Offset: 1
+  - Cifrado: Ipmb
+  - Descifrado: Gnkz
+
+  **`Offset negativo`**:
+  - Mensaje: Hola
+  - Offset: -1
+  - Cifrado: Gnkz
+  - Descifrado: Ipmb
 
 ## Investigación UX
 Éste producto tiene como usuarios a los docentes de colegios, universidades y otros.
@@ -101,9 +136,9 @@ Tampoco está permitido intentar ejecutar el cifrado o descifrado si no se ingre
   ![2 ejm](https://user-images.githubusercontent.com/51327685/59571391-b0948500-9069-11e9-8083-3bc7e940bacc.png)
 
 A continuación de muestra el resultado indicando la acción realizada con el encabezado _**Lo hemos Cifrado**_ y las opciones de:
-**`Volver`** : Si se desea realizar una acción diferente o añadir algo al mensaje.
-**`Salir`** : En caso de haber concluido la acción.
-**`Copiar`** : Facilita la selección del texto resultado.
+  - **`Volver`** : Si se desea realizar una acción diferente o añadir algo al mensaje.
+  - **`Salir`** : En caso de haber concluido la acción.
+  - **`Copiar`** : Facilita la selección del texto resultado.
 
   ![3 ejm](https://user-images.githubusercontent.com/51327685/59571435-239dfb80-906a-11e9-9657-a023b6fe1300.png)
 
@@ -121,40 +156,4 @@ Se aplicó el mismo ejemplo del `Prototipo en Balsamic`:
 
   ![webPhone_3](https://user-images.githubusercontent.com/51327685/59573787-3ae4e500-907a-11e9-8392-fa0167a52e66.png)
 
-## Parte opcional o “Hacker edition”
 
-### Alcance del producto
-
-- Permite escribir un mensaje (texto y números) para ser cifrado.
-
-  Si bien se podría restringir el ingreso de números, para el usuario es importante poder hacerlo para mantener la fluidez del mensaje y evitar la edición.
-
-  - En este proyecto, se puede utilizar este alfabeto simple (sin ñ/Ñ):
-    
-    Cifra/descifra tanto `mayúsculas` y `minúsculas`.
-  
-  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-
-  a b c d e f g h i j k l m n o p q r s t u v w x y z
-
-    Los números, espacios y otros caracteres (ñ,Ñ,á,í,ó,ú, ...) que no cumplan la condición de estar dentro del alfabeto no serán afectados.
-
-    Ejemplo: 
-    - Mensaje: Cuáles son los divisores de 6?
-    - Offset: 1
-    - Cifrado: Dvámft tpo mpt ejwjtpsft ef 6?
-    - Descifrado: Btákdr rnm knr chuhrnqdr cd 6?
-
-- Permite ingresar un desplazamiento `(offset)` a usar en el cifrado y/o descifrado.
-    
-  **`Offset positivo`**:                                   
-  - Mensaje: Hola                             
-  - Offset: 1
-  - Cifrado: Ipmb
-  - Descifrado: Gnkz
-
-  **`Offset negativo`**:
-  - Mensaje: Hola
-  - Offset: -1
-  - Cifrado: Gnkz
-  - Descifrado: Ipmb
