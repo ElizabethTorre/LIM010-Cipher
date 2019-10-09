@@ -55,6 +55,7 @@ h1{
   color:white;
   font-size: 13px;
   border-radius: 2px;
+  cursor: pointer;
 }
 #iniciar:hover{
   background-color: #ff5733;
@@ -125,6 +126,7 @@ h3{
   color:white;
   font-size: 13px;
   border-radius: 4px;
+  cursor: pointer;
 }
 .btn:hover{
    background-color: rgb(20, 136, 219);
@@ -144,6 +146,7 @@ h3{
   height: 30px;
   width: 250px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 #despedida{
   width: 250px;
